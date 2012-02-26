@@ -1,0 +1,1996 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9006C7080E446E2A00FB92DB /* XSWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9006C7070E446E2A00FB92DB /* XSWindowController.m */; };
+		9006C7160E446EAA00FB92DB /* XSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9006C7150E446EAA00FB92DB /* XSViewController.m */; };
+		9006C7400E45C4AF00FB92DB /* mainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9006C73F0E45C4AF00FB92DB /* mainView.xib */; };
+		9006C7460E45C59000FB92DB /* PKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9006C7450E45C59000FB92DB /* PKMainViewController.m */; };
+		901AF8160EABA27D001B4697 /* PKToolbarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 901AF8150EABA27D001B4697 /* PKToolbarDelegate.m */; };
+		901AF81D0EABA992001B4697 /* MyPlaces.png in Resources */ = {isa = PBXBuildFile; fileRef = 901AF81C0EABA992001B4697 /* MyPlaces.png */; };
+		901AF8270EABB578001B4697 /* PKTrackListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901AF8260EABB578001B4697 /* PKTrackListTableView.m */; };
+		902E80650E3C5D5E004493B5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		902E80870E3C5E01004493B5 /* pathKeeper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 902E80850E3C5E01004493B5 /* pathKeeper.xib */; };
+		902E809D0E3C6175004493B5 /* AEGPSBabelDeviceMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 90753E8B0E237DF800C68B2F /* AEGPSBabelDeviceMO.m */; };
+		902E809E0E3C6176004493B5 /* AEGPSRecieverMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 90753E810E237DA100C68B2F /* AEGPSRecieverMO.m */; };
+		902E809F0E3C6177004493B5 /* AEOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 903829B40E2392CA0085FCAC /* AEOperation.m */; };
+		902E80A00E3C617A004493B5 /* GPXImportOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 903829B60E2392CA0085FCAC /* GPXImportOperation.m */; };
+		902E80A10E3C617B004493B5 /* ImportGPXIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 903829B70E2392CA0085FCAC /* ImportGPXIcon.png */; };
+		902E80A20E3C6186004493B5 /* PKWaypointMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 90753EFF0E23883A00C68B2F /* PKWaypointMO.m */; };
+		902E80A30E3C6188004493B5 /* PKTrackMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 903829520E2388C90085FCAC /* PKTrackMO.m */; };
+		902E81690E3C6F05004493B5 /* PKMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E81680E3C6F05004493B5 /* PKMainWindowController.m */; };
+		902E819D0E3C7306004493B5 /* mainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 902E819B0E3C7306004493B5 /* mainWindow.xib */; };
+		902E81E70E3C74DD004493B5 /* PKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E81E60E3C74DD004493B5 /* PKDetailViewController.m */; };
+		902E82070E3C7548004493B5 /* detailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 902E82060E3C7548004493B5 /* detailView.xib */; };
+		9032E7CC0F937A99007610B7 /* MyDocument1.1.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9032E7CB0F937A99007610B7 /* MyDocument1.1.xcmappingmodel */; };
+		9035A37D0E6805700078090E /* NSData_AMDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9035A37C0E6805700078090E /* NSData_AMDigest.m */; };
+		9035A3B50E680E860078090E /* libcrypto.0.9.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9035A3B40E680E860078090E /* libcrypto.0.9.7.dylib */; };
+		9035A3C50E6810EE0078090E /* libssl.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9035A3C40E6810EE0078090E /* libssl.0.9.dylib */; };
+		9038AC400F76A44900589315 /* MyDocument1.0.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9038AC3F0F76A44900589315 /* MyDocument1.0.xcmappingmodel */; };
+		903A82D60F420881008C5A77 /* BWToolkitFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 90D8D1590F0815B800CE3223 /* BWToolkitFramework.framework */; };
+		903C025D0ED7150000426C86 /* importGPSFiles.xib in Resources */ = {isa = PBXBuildFile; fileRef = 903C025C0ED7150000426C86 /* importGPSFiles.xib */; };
+		903C02630ED7181F00426C86 /* PKImportGPSFilesSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C02620ED7181F00426C86 /* PKImportGPSFilesSheetController.m */; };
+		904CC8F10FDAC5B40007D537 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904CC8F00FDAC5B40007D537 /* CorePlot.framework */; };
+		904CC9250FDAC5EE0007D537 /* CorePlot.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 904CC8F00FDAC5B40007D537 /* CorePlot.framework */; };
+		904DFDB90EAFB5DB00DE8693 /* MyDocument.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 775BDEF0067A8BF0009058FE /* MyDocument.xcdatamodel */; };
+		904DFDCD0EAFB86C00DE8693 /* MyDocument0.4.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 904DFDCC0EAFB86C00DE8693 /* MyDocument0.4.xcmappingmodel */; };
+		905A780210EF89210085673B /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F180FB09DB20027E8EA /* FMDatabase.m */; };
+		905A780710EF89670085673B /* JDKTempDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = 905A780610EF89670085673B /* JDKTempDirectory.m */; };
+		905A788110EF8FE60085673B /* DMSExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 905A785E10EF8F1E0085673B /* DMSExport.m */; };
+		905A788210EF90000085673B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FB4A0310A604C5003BF7F6 /* CoreData.framework */; };
+		906320100EB35F58004102B0 /* PKSmartLibraryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9063200D0EB35F58004102B0 /* PKSmartLibraryItem.m */; };
+		906320110EB35F58004102B0 /* PKStyleMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9063200F0EB35F58004102B0 /* PKStyleMO.m */; };
+		906320230EB36A14004102B0 /* NSColorHexValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 906320220EB36A14004102B0 /* NSColorHexValue.m */; };
+		906320290EB485A0004102B0 /* MyDocument0.5.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 906320280EB485A0004102B0 /* MyDocument0.5.xcmappingmodel */; };
+		906320780EB488EE004102B0 /* PKPreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 906320770EB488EE004102B0 /* PKPreferenceController.m */; };
+		906320880EB48AA7004102B0 /* preferencePanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 906320870EB48AA7004102B0 /* preferencePanel.xib */; };
+		906320DF0EB493DC004102B0 /* PKGeneralPrefPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 906320DE0EB493DC004102B0 /* PKGeneralPrefPanel.m */; };
+		906320E20EB493FC004102B0 /* PKStylesPrefPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 906320E10EB493FC004102B0 /* PKStylesPrefPanel.m */; };
+		906320E40EB4942A004102B0 /* stylesPrefPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 906320E30EB4942A004102B0 /* stylesPrefPanel.xib */; };
+		906320E60EB49435004102B0 /* generalPrefPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 906320E50EB49435004102B0 /* generalPrefPanel.xib */; };
+		906321400EB4A958004102B0 /* categoriesIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = 9063213F0EB4A958004102B0 /* categoriesIcon.tif */; };
+		906321620EB4AB4C004102B0 /* categoriesPrefPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 906321610EB4AB4C004102B0 /* categoriesPrefPanel.xib */; };
+		9063218A0EB4B339004102B0 /* PKCategoriesPrefPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 906321890EB4B339004102B0 /* PKCategoriesPrefPanel.m */; };
+		9066A7C10FE3C41E00BC3421 /* NSDateDecimalValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9066A7C00FE3C41E00BC3421 /* NSDateDecimalValue.m */; };
+		9068834C0F8D401900FA9282 /* CRManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 902282E20F8BB717006E2091 /* CRManagedObject.m */; };
+		9068834D0F8D401900FA9282 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 906883210F8D346A00FA9282 /* Group.m */; };
+		9068834E0F8D401A00FA9282 /* ManualGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 902282E40F8BB717006E2091 /* ManualGroup.m */; };
+		9068834F0F8D401B00FA9282 /* SmartGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 902282E60F8BB717006E2091 /* SmartGroup.m */; };
+		906A6E0D10B8353900013053 /* PKDateToNumberTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 906A6E0B10B834DD00013053 /* PKDateToNumberTransformer.m */; };
+		907FF8E50E50A27000BE6D38 /* PSTileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8E40E50A27000BE6D38 /* PSTileMO.m */; };
+		907FF8F60E50A94400BE6D38 /* PSTileGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8F30E50A94400BE6D38 /* PSTileGroup.m */; };
+		907FF8F70E50A94400BE6D38 /* PSTileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8F50E50A94400BE6D38 /* PSTileManager.m */; };
+		907FF9E20E50C9D400BE6D38 /* PSTileManager.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8E80E50A2B000BE6D38 /* PSTileManager.xcdatamodel */; };
+		907FFA020E50D97500BE6D38 /* PKMapSourceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907FFA010E50D97500BE6D38 /* PKMapSourceController.m */; };
+		908BA7180EB7A5520002CABD /* MyDocument0.6.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 908BA7170EB7A5520002CABD /* MyDocument0.6.xcmappingmodel */; };
+		90961FC00EA9E33800C4D896 /* PKKMLExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 90961FBF0EA9E33800C4D896 /* PKKMLExport.m */; };
+		90961FC60EA9E3CB00C4D896 /* myplaces.kml in Resources */ = {isa = PBXBuildFile; fileRef = 90961FC50EA9E3CB00C4D896 /* myplaces.kml */; };
+		9098DA5F10775B720011F2AF /* GroupKMLExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9098DA5E10775B720011F2AF /* GroupKMLExport.m */; };
+		9099B7060F99DF84007E1314 /* PKArrayCountValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099B7050F99DF84007E1314 /* PKArrayCountValueTransformer.m */; };
+		9099B7A40F9B1C54007E1314 /* PKAEOperationTooltipValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099B7A30F9B1C54007E1314 /* PKAEOperationTooltipValueTransformer.m */; };
+		9099B7D00F9B2294007E1314 /* PKNotArrayCountValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099B7CF0F9B2294007E1314 /* PKNotArrayCountValueTransformer.m */; };
+		9099B8240F9B3275007E1314 /* PKCountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099B8230F9B3275007E1314 /* PKCountCell.m */; };
+		9099B92D0F9C6F4E007E1314 /* MainWindowDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099B92C0F9C6F4E007E1314 /* MainWindowDelegate.m */; };
+		9099B9750F9C8164007E1314 /* PKDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099B9740F9C8164007E1314 /* PKDetailView.m */; };
+		909F71A20EAE415E00F62730 /* PKLibraryOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 909F71A10EAE415E00F62730 /* PKLibraryOutlineView.m */; };
+		909F71EB0EAE47E500F62730 /* TrackListPredicateEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909F71EA0EAE47E500F62730 /* TrackListPredicateEditor.xib */; };
+		90A2CBB90EA2565800E5A3F6 /* PKTrackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A2CBB80EA2565800E5A3F6 /* PKTrackListViewController.m */; };
+		90A2CBBD0EA256B200E5A3F6 /* trackListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90A2CBBC0EA256B200E5A3F6 /* trackListView.xib */; };
+		90A9D06D0EBDC68400A635F8 /* MyDocument0.8.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 90A9D06C0EBDC68300A635F8 /* MyDocument0.8.xcmappingmodel */; };
+		90B2EC8E10CBCCAA00C18A2A /* PKGraphInteractionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B2EC8B10CBCC2900C18A2A /* PKGraphInteractionLayer.m */; };
+		90B2ED1510CCE56B00C18A2A /* pointInteractionWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90B2ED1410CCE56B00C18A2A /* pointInteractionWindow.xib */; };
+		90BD3F3D0E4C93F70018846D /* sourceOutlineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BD3F3C0E4C93F70018846D /* sourceOutlineView.xib */; };
+		90BD3F5F0E4C97400018846D /* PKSourceOutlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BD3F5E0E4C97400018846D /* PKSourceOutlineViewController.m */; };
+		90BD3F9F0E4C9BD90018846D /* oldTrackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BD3F9E0E4C9BD90018846D /* oldTrackView.xib */; };
+		90C301C40E40F30600B54B2D /* MyDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90C301C20E40F30600B54B2D /* MyDocument.xcdatamodeld */; };
+		90C301EE0E40FF0000B54B2D /* MyDocument0.1.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 90C301ED0E40FF0000B54B2D /* MyDocument0.1.xcmappingmodel */; };
+		90D375C10F939F450098006D /* image_group_library.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 90D375BE0F939F450098006D /* image_group_library.tiff */; };
+		90D375C20F939F450098006D /* image_group_shared.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 90D375BF0F939F450098006D /* image_group_shared.tiff */; };
+		90D375C30F939F450098006D /* image_group_smart.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 90D375C00F939F450098006D /* image_group_smart.tiff */; };
+		90D3768E0F93BDC90098006D /* MyDocument1.2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 90D3768D0F93BDC90098006D /* MyDocument1.2.xcmappingmodel */; };
+		90D472170ED99B2E00EC86C0 /* PKTracksWaypointController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D472160ED99B2E00EC86C0 /* PKTracksWaypointController.m */; };
+		90D472A20ED9A8E300EC86C0 /* To change in model in Resources */ = {isa = PBXBuildFile; fileRef = 90D472A10ED9A8E300EC86C0 /* To change in model */; };
+		90D79F750FB09DB30027E8EA /* Cache.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F150FB09DB20027E8EA /* Cache.xcdatamodel */; };
+		90D79F770FB09DB30027E8EA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F1A0FB09DB20027E8EA /* FMDatabaseAdditions.m */; };
+		90D79F790FB09DB30027E8EA /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F1D0FB09DB20027E8EA /* FMResultSet.m */; };
+		90D79F7B0FB09DB30027E8EA /* marker-X.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D79F1F0FB09DB20027E8EA /* marker-X.png */; };
+		90D79F7D0FB09DB30027E8EA /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D79F220FB09DB20027E8EA /* loading.png */; };
+		90D79F7E0FB09DB30027E8EA /* marker-blue-withletter.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D79F230FB09DB20027E8EA /* marker-blue-withletter.png */; };
+		90D79F7F0FB09DB30027E8EA /* marker-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D79F240FB09DB20027E8EA /* marker-blue.png */; };
+		90D79F800FB09DB30027E8EA /* marker-red-withletter.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D79F250FB09DB20027E8EA /* marker-red-withletter.png */; };
+		90D79F810FB09DB30027E8EA /* marker-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D79F260FB09DB20027E8EA /* marker-red.png */; };
+		90D79F820FB09DB30027E8EA /* RMAbstractMercatorWebSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F280FB09DB20027E8EA /* RMAbstractMercatorWebSource.m */; };
+		90D79F830FB09DB30027E8EA /* RMCachedTileSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F2A0FB09DB20027E8EA /* RMCachedTileSource.m */; };
+		90D79F840FB09DB30027E8EA /* RMCloudMadeMapSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F2C0FB09DB20027E8EA /* RMCloudMadeMapSource.m */; };
+		90D79F850FB09DB30027E8EA /* RMConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F2E0FB09DB20027E8EA /* RMConfiguration.m */; };
+		90D79F860FB09DB30027E8EA /* RMCoreAnimationRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F300FB09DB20027E8EA /* RMCoreAnimationRenderer.m */; };
+		90D79F870FB09DB30027E8EA /* RMDatabaseCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F320FB09DB20027E8EA /* RMDatabaseCache.m */; };
+		90D79F880FB09DB30027E8EA /* RMFileTileImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F340FB09DB20027E8EA /* RMFileTileImage.m */; };
+		90D79F890FB09DB30027E8EA /* RMFoundation.c in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F350FB09DB20027E8EA /* RMFoundation.c */; };
+		90D79F8A0FB09DB30027E8EA /* RMFractalTileProjection.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F380FB09DB20027E8EA /* RMFractalTileProjection.m */; };
+		90D79F8B0FB09DB30027E8EA /* RMGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F3A0FB09DB20027E8EA /* RMGeoHash.m */; };
+		90D79F8C0FB09DB30027E8EA /* RMLayerSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F3E0FB09DB20027E8EA /* RMLayerSet.m */; };
+		90D79F8D0FB09DB30027E8EA /* RMMapContents.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F400FB09DB20027E8EA /* RMMapContents.m */; };
+		90D79F8E0FB09DB30027E8EA /* RMMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F420FB09DB20027E8EA /* RMMapLayer.m */; };
+		90D79F8F0FB09DB30027E8EA /* RMMapRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F440FB09DB20027E8EA /* RMMapRenderer.m */; };
+		90D79F930FB09DB30027E8EA /* RMMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F4D0FB09DB20027E8EA /* RMMemoryCache.m */; };
+		90D79F940FB09DB30027E8EA /* RMMercatorToScreenProjection.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F4F0FB09DB20027E8EA /* RMMercatorToScreenProjection.m */; };
+		90D79F950FB09DB30027E8EA /* RMOpenAerialMapSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F520FB09DB20027E8EA /* RMOpenAerialMapSource.m */; };
+		90D79F960FB09DB30027E8EA /* RMOpenStreetMapSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F540FB09DB20027E8EA /* RMOpenStreetMapSource.m */; };
+		90D79F970FB09DB30027E8EA /* RMPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F560FB09DB20027E8EA /* RMPath.m */; };
+		90D79F980FB09DB30027E8EA /* RMPixel.c in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F570FB09DB20027E8EA /* RMPixel.c */; };
+		90D79F990FB09DB30027E8EA /* RMProjection.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F5A0FB09DB30027E8EA /* RMProjection.m */; };
+		90D79F9A0FB09DB30027E8EA /* RMTile.c in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F5B0FB09DB30027E8EA /* RMTile.c */; };
+		90D79F9B0FB09DB30027E8EA /* RMTileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F5E0FB09DB30027E8EA /* RMTileCache.m */; };
+		90D79F9C0FB09DB30027E8EA /* RMTileCacheDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F600FB09DB30027E8EA /* RMTileCacheDAO.m */; };
+		90D79F9E0FB09DB30027E8EA /* RMTileImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F640FB09DB30027E8EA /* RMTileImage.m */; };
+		90D79F9F0FB09DB30027E8EA /* RMTileImageSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F660FB09DB30027E8EA /* RMTileImageSet.m */; };
+		90D79FA00FB09DB30027E8EA /* RMTileLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F680FB09DB30027E8EA /* RMTileLoader.m */; };
+		90D79FA10FB09DB30027E8EA /* RMTileProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F6A0FB09DB30027E8EA /* RMTileProxy.m */; };
+		90D79FA20FB09DB30027E8EA /* RMTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F6E0FB09DB30027E8EA /* RMTransform.m */; };
+		90D79FA30FB09DB30027E8EA /* RMVirtualEarthSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F700FB09DB30027E8EA /* RMVirtualEarthSource.m */; };
+		90D79FA40FB09DB30027E8EA /* RMWebTileImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F720FB09DB30027E8EA /* RMWebTileImage.m */; };
+		90D79FA50FB09DB30027E8EA /* RMYahooMapSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F740FB09DB30027E8EA /* RMYahooMapSource.m */; };
+		90D7A0DA0FB0C0750027E8EA /* libProj4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D7A0D90FB0C0750027E8EA /* libProj4.a */; };
+		90D7A0DF0FB0C1110027E8EA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D7A0DE0FB0C1110027E8EA /* libsqlite3.dylib */; };
+		90D7A0E70FB0C1870027E8EA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D7A0E60FB0C1870027E8EA /* QuartzCore.framework */; };
+		90D7A0EC0FB0C2340027E8EA /* RMMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D79F460FB09DB20027E8EA /* RMMapView.m */; };
+		90D7A1250FB0C37D0027E8EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; };
+		90D7A1300FB0C38E0027E8EA /* pathKeeper_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E80580E3C5C51004493B5 /* pathKeeper_AppDelegate.m */; };
+		90D7A15C0FB0C5620027E8EA /* PSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D7A15B0FB0C5620027E8EA /* PSUtil.m */; };
+		90D8D15A0F0815B800CE3223 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D8D1590F0815B800CE3223 /* BWToolkitFramework.framework */; };
+		90D8D1C20F08E3C700CE3223 /* PKKMLExport-pertrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D8D1C10F08E3C700CE3223 /* PKKMLExport-pertrack.m */; };
+		90DC61A10F4206B7000C47E5 /* PKGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DC61A00F4206B7000C47E5 /* PKGraphView.m */; };
+		90DCC3950ED9AF5A0052FBCC /* PKTrackWaypointOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DCC3940ED9AF5A0052FBCC /* PKTrackWaypointOutlineView.m */; };
+		90DEAA4610234FDA000A5CC1 /* CPDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DEAA4510234FDA000A5CC1 /* CPDateFormatter.m */; };
+		90DF09750E45E0440096E3CD /* waypointView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DF09740E45E0440096E3CD /* waypointView.xib */; };
+		90DF097A0E45E0780096E3CD /* PKWaypointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DF09790E45E0780096E3CD /* PKWaypointViewController.m */; };
+		90DF09B20E46028D0096E3CD /* PKTrackMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DF09B10E46028D0096E3CD /* PKTrackMapViewController.m */; };
+		90DF09B60E4602E00096E3CD /* trackMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DF09B50E4602E00096E3CD /* trackMapView.xib */; };
+		90DF0A3A0E460C750096E3CD /* GPSSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DF0A390E460C750096E3CD /* GPSSelectionView.xib */; };
+		90DF0A3F0E460C930096E3CD /* PKGPSSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DF0A3E0E460C930096E3CD /* PKGPSSelectionViewController.m */; };
+		90DF0ACD0E46D56B0096E3CD /* trackMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DF0ACC0E46D56B0096E3CD /* trackMapView.m */; };
+		90DF0C0E0E4786D90096E3CD /* AEConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DF0C0D0E4786D90096E3CD /* AEConverter.m */; };
+		90E2D2560FFF72400054FA2E /* MyDocument1.4.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 90E2D2550FFF72400054FA2E /* MyDocument1.4.xcdatamodel */; };
+		90E2D25B0FFF72870054FA2E /* MyDocument1.4.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 90E2D25A0FFF72870054FA2E /* MyDocument1.4.xcmappingmodel */; };
+		90E622C10F0E6EB90074D5B9 /* trackSpeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E622C00F0E6EB90074D5B9 /* trackSpeedView.xib */; };
+		90E6233E0F0E725C0074D5B9 /* PKTrackGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E6233D0F0E725C0074D5B9 /* PKTrackGraphViewController.m */; };
+		90EAB64C0F10F8DA00AAD3B6 /* MyDocument0.9.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 90EAB64B0F10F8DA00AAD3B6 /* MyDocument0.9.xcmappingmodel */; };
+		90F2D0200F9CFE32005424C0 /* MyDocument1.3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 90F2D01F0F9CFE32005424C0 /* MyDocument1.3.xcmappingmodel */; };
+		90F801AE0E48E9B000AB155E /* PKTrackOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F801AD0E48E9B000AB155E /* PKTrackOverviewViewController.m */; };
+		90F801B20E48EA1300AB155E /* trackOverviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F801B10E48EA1300AB155E /* trackOverviewView.xib */; };
+		90FA7F680E74020F0048EE2A /* MyDocument0.2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 90FA7F670E74020F0048EE2A /* MyDocument0.2.xcmappingmodel */; };
+		90FA7FD30E74FAB50048EE2A /* PKTrackCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA7FD20E74FAB50048EE2A /* PKTrackCategory.m */; };
+		90FA7FD70E74FAF00048EE2A /* MyDocument0.3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 90FA7FD60E74FAF00048EE2A /* MyDocument0.3.xcmappingmodel */; };
+		90FB49EE10A60253003BF7F6 /* PKTestPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FB49ED10A60253003BF7F6 /* PKTestPlugin.m */; };
+		90FB4A0410A604C5003BF7F6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FB4A0310A604C5003BF7F6 /* CoreData.framework */; };
+		90FB4A0C10A605EB003BF7F6 /* PKExportPluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FB4A0910A60535003BF7F6 /* PKExportPluginManager.m */; };
+		90FB4A2C10A6B6F5003BF7F6 /* pluginsPrefPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90FB4A1B10A6B2EF003BF7F6 /* pluginsPrefPanel.xib */; };
+		90FB4AAF10A6BEF7003BF7F6 /* PKPluginsPrefPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FB4A2110A6B42C003BF7F6 /* PKPluginsPrefPanel.m */; };
+		90FB4B2910A6C534003BF7F6 /* PKExportPluginProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 90FB49DD10A6014F003BF7F6 /* PKExportPluginProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90FB4B9810A729AE003BF7F6 /* PKExportPluginOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FB4B9610A72996003BF7F6 /* PKExportPluginOperation.m */; };
+		90FD1CD50FB1D5620091C0FB /* PKTrackMO+RM.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FD1CD40FB1D5620091C0FB /* PKTrackMO+RM.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		904CC88A0FDAC3D20007D537 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90BC0C580F3F10E10062C418 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = CorePlot;
+		};
+		905A788410EF900E0085673B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90FB4B2310A6C520003BF7F6;
+			remoteInfo = PKPlugins;
+		};
+		906A6DC710B82D9500013053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90BC0C580F3F10E10062C418 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0730F600109492D800E95162;
+			remoteInfo = UnitTests;
+		};
+		90D7A0BD0FB0BFD70027E8EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90D7A0B60FB0BFD70027E8EA /* Proj4.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Proj4;
+		};
+		90D8D1650F08CA4D00CE3223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90D8D15F0F08CA4C00CE3223 /* BWToolkit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1AC9740486D14A00FE50C9;
+			remoteInfo = BWToolkit;
+		};
+		90D8D1670F08CA4D00CE3223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90D8D15F0F08CA4C00CE3223 /* BWToolkit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53DF68FD067E5B5A0090B5B0;
+			remoteInfo = BWToolkitFramework;
+		};
+		90FB4B2A10A6C549003BF7F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90FB4B2310A6C520003BF7F6;
+			remoteInfo = PKPlugins;
+		};
+		90FB4B2C10A6C54D003BF7F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90FB4B2310A6C520003BF7F6;
+			remoteInfo = PKPlugins;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90DC61C60F420829000C47E5 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				904CC9250FDAC5EE0007D537 /* CorePlot.framework in Copy Frameworks */,
+				903A82D60F420881008C5A77 /* BWToolkitFramework.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90F76CF90FC97FF600CBA31C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		775BDEF0067A8BF0009058FE /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
+		7788DA0506752A1600599AAD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		900511300E2FCDFD000D5BB5 /* DocumentToolbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentToolbarController.h; sourceTree = "<group>"; };
+		900511310E2FCDFD000D5BB5 /* DocumentToolbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentToolbarController.m; sourceTree = "<group>"; };
+		9006C7060E446E2A00FB92DB /* XSWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSWindowController.h; sourceTree = "<group>"; };
+		9006C7070E446E2A00FB92DB /* XSWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSWindowController.m; sourceTree = "<group>"; };
+		9006C7140E446EAA00FB92DB /* XSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSViewController.h; sourceTree = "<group>"; };
+		9006C7150E446EAA00FB92DB /* XSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSViewController.m; sourceTree = "<group>"; };
+		9006C73F0E45C4AF00FB92DB /* mainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainView.xib; sourceTree = "<group>"; };
+		9006C7440E45C59000FB92DB /* PKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKMainViewController.h; sourceTree = "<group>"; };
+		9006C7450E45C59000FB92DB /* PKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKMainViewController.m; sourceTree = "<group>"; };
+		901AF8140EABA27D001B4697 /* PKToolbarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKToolbarDelegate.h; sourceTree = "<group>"; };
+		901AF8150EABA27D001B4697 /* PKToolbarDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKToolbarDelegate.m; sourceTree = "<group>"; };
+		901AF81C0EABA992001B4697 /* MyPlaces.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyPlaces.png; sourceTree = "<group>"; };
+		901AF8250EABB578001B4697 /* PKTrackListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTrackListTableView.h; sourceTree = "<group>"; };
+		901AF8260EABB578001B4697 /* PKTrackListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTrackListTableView.m; sourceTree = "<group>"; };
+		901AF8B00EABC0F6001B4697 /* PKTrackLibraryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTrackLibraryItem.h; sourceTree = "<group>"; };
+		901AF8B10EABC0F6001B4697 /* PKTrackLibraryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTrackLibraryItem.m; sourceTree = "<group>"; };
+		9021ED140E2E89AE00BE84D5 /* PathKeeperIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PathKeeperIcon.icns; sourceTree = "<group>"; };
+		902282E10F8BB717006E2091 /* CRManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRManagedObject.h; sourceTree = "<group>"; };
+		902282E20F8BB717006E2091 /* CRManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRManagedObject.m; sourceTree = "<group>"; };
+		902282E30F8BB717006E2091 /* ManualGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualGroup.h; sourceTree = "<group>"; };
+		902282E40F8BB717006E2091 /* ManualGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualGroup.m; sourceTree = "<group>"; };
+		902282E50F8BB717006E2091 /* SmartGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartGroup.h; sourceTree = "<group>"; };
+		902282E60F8BB717006E2091 /* SmartGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartGroup.m; sourceTree = "<group>"; };
+		902E80510E3C5C0C004493B5 /* PathKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		902E80530E3C5C0C004493B5 /* PathKeeper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PathKeeper-Info.plist"; sourceTree = "<group>"; };
+		902E80570E3C5C51004493B5 /* pathKeeper_AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pathKeeper_AppDelegate.h; sourceTree = "<group>"; };
+		902E80580E3C5C51004493B5 /* pathKeeper_AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pathKeeper_AppDelegate.m; sourceTree = "<group>"; };
+		902E80860E3C5E01004493B5 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/pathKeeper.xib; sourceTree = "<group>"; };
+		902E80AB0E3C63DF004493B5 /* trackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trackViewController.h; sourceTree = "<group>"; };
+		902E80AC0E3C63DF004493B5 /* trackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = trackViewController.m; sourceTree = "<group>"; };
+		902E81670E3C6F05004493B5 /* PKMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKMainWindowController.h; sourceTree = "<group>"; };
+		902E81680E3C6F05004493B5 /* PKMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKMainWindowController.m; sourceTree = "<group>"; };
+		902E819C0E3C7306004493B5 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/mainWindow.xib; sourceTree = "<group>"; };
+		902E81E50E3C74DD004493B5 /* PKDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDetailViewController.h; sourceTree = "<group>"; };
+		902E81E60E3C74DD004493B5 /* PKDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKDetailViewController.m; sourceTree = "<group>"; };
+		902E82060E3C7548004493B5 /* detailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = detailView.xib; sourceTree = "<group>"; };
+		9032E7A90F93792E007610B7 /* MyDocument1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument1.1.xcdatamodel; sourceTree = "<group>"; };
+		9032E7CB0F937A99007610B7 /* MyDocument1.1.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument1.1.xcmappingmodel; sourceTree = "<group>"; };
+		9035A37B0E6805700078090E /* NSData_AMDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSData_AMDigest.h; sourceTree = "<group>"; };
+		9035A37C0E6805700078090E /* NSData_AMDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSData_AMDigest.m; sourceTree = "<group>"; };
+		9035A3B40E680E860078090E /* libcrypto.0.9.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.0.9.7.dylib; path = usr/lib/libcrypto.0.9.7.dylib; sourceTree = SDKROOT; };
+		9035A3C40E6810EE0078090E /* libssl.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.0.9.dylib; path = usr/lib/libssl.0.9.dylib; sourceTree = SDKROOT; };
+		903829510E2388C90085FCAC /* PKTrackMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTrackMO.h; sourceTree = "<group>"; };
+		903829520E2388C90085FCAC /* PKTrackMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTrackMO.m; sourceTree = "<group>"; };
+		903829B30E2392CA0085FCAC /* AEOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEOperation.h; sourceTree = "<group>"; };
+		903829B40E2392CA0085FCAC /* AEOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEOperation.m; sourceTree = "<group>"; };
+		903829B50E2392CA0085FCAC /* GPXImportOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXImportOperation.h; sourceTree = "<group>"; };
+		903829B60E2392CA0085FCAC /* GPXImportOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXImportOperation.m; sourceTree = "<group>"; };
+		903829B70E2392CA0085FCAC /* ImportGPXIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImportGPXIcon.png; sourceTree = "<group>"; };
+		9038AC3F0F76A44900589315 /* MyDocument1.0.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument1.0.xcmappingmodel; sourceTree = "<group>"; };
+		903C025C0ED7150000426C86 /* importGPSFiles.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = importGPSFiles.xib; sourceTree = "<group>"; };
+		903C02610ED7181F00426C86 /* PKImportGPSFilesSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKImportGPSFilesSheetController.h; sourceTree = "<group>"; };
+		903C02620ED7181F00426C86 /* PKImportGPSFilesSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKImportGPSFilesSheetController.m; sourceTree = "<group>"; };
+		904CC8F00FDAC5B40007D537 /* CorePlot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CorePlot.framework; path = ../CorePlot/framework/build/Debug/CorePlot.framework; sourceTree = SOURCE_ROOT; };
+		904DFDC60EAFB84100DE8693 /* MyDocument0.4.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument0.4.xcdatamodel; sourceTree = "<group>"; };
+		904DFDCC0EAFB86C00DE8693 /* MyDocument0.4.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument0.4.xcmappingmodel; sourceTree = "<group>"; };
+		905A780510EF89670085673B /* JDKTempDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKTempDirectory.h; sourceTree = "<group>"; };
+		905A780610EF89670085673B /* JDKTempDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDKTempDirectory.m; sourceTree = "<group>"; };
+		905A785D10EF8F1E0085673B /* DMSExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMSExport.h; sourceTree = "<group>"; };
+		905A785E10EF8F1E0085673B /* DMSExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMSExport.m; sourceTree = "<group>"; };
+		905A787C10EF8FC80085673B /* DMSExport.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMSExport.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		905A787D10EF8FC80085673B /* DMSExport-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMSExport-Info.plist"; sourceTree = "<group>"; };
+		9063200C0EB35F58004102B0 /* PKSmartLibraryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKSmartLibraryItem.h; sourceTree = "<group>"; };
+		9063200D0EB35F58004102B0 /* PKSmartLibraryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKSmartLibraryItem.m; sourceTree = "<group>"; };
+		9063200E0EB35F58004102B0 /* PKStyleMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKStyleMO.h; sourceTree = "<group>"; };
+		9063200F0EB35F58004102B0 /* PKStyleMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKStyleMO.m; sourceTree = "<group>"; };
+		906320180EB361BE004102B0 /* MyDocument0.5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument0.5.xcdatamodel; sourceTree = "<group>"; };
+		906320210EB36A14004102B0 /* NSColorHexValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSColorHexValue.h; sourceTree = "<group>"; };
+		906320220EB36A14004102B0 /* NSColorHexValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSColorHexValue.m; sourceTree = "<group>"; };
+		906320280EB485A0004102B0 /* MyDocument0.5.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument0.5.xcmappingmodel; sourceTree = "<group>"; };
+		906320760EB488EE004102B0 /* PKPreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKPreferenceController.h; sourceTree = "<group>"; };
+		906320770EB488EE004102B0 /* PKPreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKPreferenceController.m; sourceTree = "<group>"; };
+		906320870EB48AA7004102B0 /* preferencePanel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = preferencePanel.xib; sourceTree = "<group>"; };
+		906320DD0EB493DC004102B0 /* PKGeneralPrefPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKGeneralPrefPanel.h; sourceTree = "<group>"; };
+		906320DE0EB493DC004102B0 /* PKGeneralPrefPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKGeneralPrefPanel.m; sourceTree = "<group>"; };
+		906320E00EB493FC004102B0 /* PKStylesPrefPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKStylesPrefPanel.h; sourceTree = "<group>"; };
+		906320E10EB493FC004102B0 /* PKStylesPrefPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKStylesPrefPanel.m; sourceTree = "<group>"; };
+		906320E30EB4942A004102B0 /* stylesPrefPanel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = stylesPrefPanel.xib; sourceTree = "<group>"; };
+		906320E50EB49435004102B0 /* generalPrefPanel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = generalPrefPanel.xib; sourceTree = "<group>"; };
+		9063213F0EB4A958004102B0 /* categoriesIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = categoriesIcon.tif; sourceTree = "<group>"; };
+		906321610EB4AB4C004102B0 /* categoriesPrefPanel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = categoriesPrefPanel.xib; sourceTree = "<group>"; };
+		906321880EB4B339004102B0 /* PKCategoriesPrefPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCategoriesPrefPanel.h; sourceTree = "<group>"; };
+		906321890EB4B339004102B0 /* PKCategoriesPrefPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCategoriesPrefPanel.m; sourceTree = "<group>"; };
+		906322570EB4F305004102B0 /* MyDocument0.6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument0.6.xcdatamodel; sourceTree = "<group>"; };
+		9066A7BF0FE3C41E00BC3421 /* NSDateDecimalValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateDecimalValue.h; sourceTree = "<group>"; };
+		9066A7C00FE3C41E00BC3421 /* NSDateDecimalValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateDecimalValue.m; sourceTree = "<group>"; };
+		906883200F8D346A00FA9282 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		906883210F8D346A00FA9282 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		906A6E0A10B834DD00013053 /* PKDateToNumberTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDateToNumberTransformer.h; sourceTree = "<group>"; };
+		906A6E0B10B834DD00013053 /* PKDateToNumberTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKDateToNumberTransformer.m; sourceTree = "<group>"; };
+		90753E800E237DA100C68B2F /* AEGPSRecieverMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEGPSRecieverMO.h; sourceTree = "<group>"; };
+		90753E810E237DA100C68B2F /* AEGPSRecieverMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEGPSRecieverMO.m; sourceTree = "<group>"; };
+		90753E8A0E237DF800C68B2F /* AEGPSBabelDeviceMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEGPSBabelDeviceMO.h; sourceTree = "<group>"; };
+		90753E8B0E237DF800C68B2F /* AEGPSBabelDeviceMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEGPSBabelDeviceMO.m; sourceTree = "<group>"; };
+		90753EDD0E23838E00C68B2F /* PKTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTypes.h; sourceTree = "<group>"; };
+		90753EFE0E23883A00C68B2F /* PKWaypointMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKWaypointMO.h; sourceTree = "<group>"; };
+		90753EFF0E23883A00C68B2F /* PKWaypointMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKWaypointMO.m; sourceTree = "<group>"; };
+		907FF8E30E50A27000BE6D38 /* PSTileMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTileMO.h; sourceTree = "<group>"; };
+		907FF8E40E50A27000BE6D38 /* PSTileMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTileMO.m; sourceTree = "<group>"; };
+		907FF8E80E50A2B000BE6D38 /* PSTileManager.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = PSTileManager.xcdatamodel; sourceTree = "<group>"; };
+		907FF8F20E50A94400BE6D38 /* PSTileGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTileGroup.h; sourceTree = "<group>"; };
+		907FF8F30E50A94400BE6D38 /* PSTileGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTileGroup.m; sourceTree = "<group>"; };
+		907FF8F40E50A94400BE6D38 /* PSTileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTileManager.h; sourceTree = "<group>"; };
+		907FF8F50E50A94400BE6D38 /* PSTileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTileManager.m; sourceTree = "<group>"; };
+		907FFA000E50D97500BE6D38 /* PKMapSourceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKMapSourceController.h; sourceTree = "<group>"; };
+		907FFA010E50D97500BE6D38 /* PKMapSourceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKMapSourceController.m; sourceTree = "<group>"; };
+		908BA7120EB7A4A70002CABD /* MyDocument0.7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument0.7.xcdatamodel; sourceTree = "<group>"; };
+		908BA7170EB7A5520002CABD /* MyDocument0.6.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument0.6.xcmappingmodel; sourceTree = "<group>"; };
+		90961FBE0EA9E33800C4D896 /* PKKMLExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKKMLExport.h; sourceTree = "<group>"; };
+		90961FBF0EA9E33800C4D896 /* PKKMLExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKKMLExport.m; sourceTree = "<group>"; };
+		90961FC50EA9E3CB00C4D896 /* myplaces.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = myplaces.kml; sourceTree = "<group>"; };
+		90961FC90EA9E44000C4D896 /* OldMyPlacesContent.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OldMyPlacesContent.kml; sourceTree = "<group>"; };
+		9098DA5D10775B720011F2AF /* GroupKMLExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupKMLExport.h; sourceTree = "<group>"; };
+		9098DA5E10775B720011F2AF /* GroupKMLExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupKMLExport.m; sourceTree = "<group>"; };
+		9099B7040F99DF84007E1314 /* PKArrayCountValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKArrayCountValueTransformer.h; sourceTree = "<group>"; };
+		9099B7050F99DF84007E1314 /* PKArrayCountValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKArrayCountValueTransformer.m; sourceTree = "<group>"; };
+		9099B7A20F9B1C54007E1314 /* PKAEOperationTooltipValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKAEOperationTooltipValueTransformer.h; sourceTree = "<group>"; };
+		9099B7A30F9B1C54007E1314 /* PKAEOperationTooltipValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKAEOperationTooltipValueTransformer.m; sourceTree = "<group>"; };
+		9099B7CF0F9B2294007E1314 /* PKNotArrayCountValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKNotArrayCountValueTransformer.m; sourceTree = "<group>"; };
+		9099B7D90F9B22F3007E1314 /* PKNotArrayCountValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKNotArrayCountValueTransformer.h; sourceTree = "<group>"; };
+		9099B8220F9B3275007E1314 /* PKCountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCountCell.h; sourceTree = "<group>"; };
+		9099B8230F9B3275007E1314 /* PKCountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCountCell.m; sourceTree = "<group>"; };
+		9099B92B0F9C6F4E007E1314 /* MainWindowDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowDelegate.h; sourceTree = "<group>"; };
+		9099B92C0F9C6F4E007E1314 /* MainWindowDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowDelegate.m; sourceTree = "<group>"; };
+		9099B9730F9C8164007E1314 /* PKDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDetailView.h; sourceTree = "<group>"; };
+		9099B9740F9C8164007E1314 /* PKDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKDetailView.m; sourceTree = "<group>"; };
+		909F71A00EAE415E00F62730 /* PKLibraryOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLibraryOutlineView.h; sourceTree = "<group>"; };
+		909F71A10EAE415E00F62730 /* PKLibraryOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLibraryOutlineView.m; sourceTree = "<group>"; };
+		909F71EA0EAE47E500F62730 /* TrackListPredicateEditor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackListPredicateEditor.xib; sourceTree = "<group>"; };
+		90A2CBB70EA2565800E5A3F6 /* PKTrackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTrackListViewController.h; sourceTree = "<group>"; };
+		90A2CBB80EA2565800E5A3F6 /* PKTrackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTrackListViewController.m; sourceTree = "<group>"; };
+		90A2CBBC0EA256B200E5A3F6 /* trackListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = trackListView.xib; sourceTree = "<group>"; };
+		90A9D0690EBDC4FC00A635F8 /* MyDocument0.8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument0.8.xcdatamodel; sourceTree = "<group>"; };
+		90A9D06C0EBDC68300A635F8 /* MyDocument0.8.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument0.8.xcmappingmodel; sourceTree = "<group>"; };
+		90B2EC8A10CBCC2900C18A2A /* PKGraphInteractionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKGraphInteractionLayer.h; sourceTree = "<group>"; };
+		90B2EC8B10CBCC2900C18A2A /* PKGraphInteractionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKGraphInteractionLayer.m; sourceTree = "<group>"; };
+		90B2ED1410CCE56B00C18A2A /* pointInteractionWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = pointInteractionWindow.xib; sourceTree = "<group>"; };
+		90BC0C580F3F10E10062C418 /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = ../CorePlot/framework/CorePlot.xcodeproj; sourceTree = SOURCE_ROOT; };
+		90BD3F3C0E4C93F70018846D /* sourceOutlineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = sourceOutlineView.xib; sourceTree = "<group>"; };
+		90BD3F5D0E4C97400018846D /* PKSourceOutlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKSourceOutlineViewController.h; sourceTree = "<group>"; };
+		90BD3F5E0E4C97400018846D /* PKSourceOutlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKSourceOutlineViewController.m; sourceTree = "<group>"; };
+		90BD3F6D0E4C98290018846D /* PKOutlineRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOutlineRoot.h; sourceTree = "<group>"; };
+		90BD3F6E0E4C98290018846D /* PKOutlineRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOutlineRoot.m; sourceTree = "<group>"; };
+		90BD3F9E0E4C9BD90018846D /* oldTrackView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = oldTrackView.xib; sourceTree = "<group>"; };
+		90C301C50E40F30600B54B2D /* MyDocument0.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument0.1.xcdatamodel; sourceTree = "<group>"; };
+		90C301ED0E40FF0000B54B2D /* MyDocument0.1.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument0.1.xcmappingmodel; sourceTree = "<group>"; };
+		90D375BE0F939F450098006D /* image_group_library.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = image_group_library.tiff; sourceTree = "<group>"; };
+		90D375BF0F939F450098006D /* image_group_shared.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = image_group_shared.tiff; sourceTree = "<group>"; };
+		90D375C00F939F450098006D /* image_group_smart.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = image_group_smart.tiff; sourceTree = "<group>"; };
+		90D3768A0F93BD620098006D /* MyDocument1.2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument1.2.xcdatamodel; sourceTree = "<group>"; };
+		90D3768D0F93BDC90098006D /* MyDocument1.2.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument1.2.xcmappingmodel; sourceTree = "<group>"; };
+		90D472150ED99B2E00EC86C0 /* PKTracksWaypointController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTracksWaypointController.h; sourceTree = "<group>"; };
+		90D472160ED99B2E00EC86C0 /* PKTracksWaypointController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTracksWaypointController.m; sourceTree = "<group>"; };
+		90D472A10ED9A8E300EC86C0 /* To change in model */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "To change in model"; sourceTree = "<group>"; };
+		90D79F150FB09DB20027E8EA /* Cache.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Cache.xcdatamodel; sourceTree = "<group>"; };
+		90D79F170FB09DB20027E8EA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		90D79F180FB09DB20027E8EA /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		90D79F190FB09DB20027E8EA /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		90D79F1A0FB09DB20027E8EA /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		90D79F1B0FB09DB20027E8EA /* fmdb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fmdb.m; sourceTree = "<group>"; };
+		90D79F1C0FB09DB20027E8EA /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		90D79F1D0FB09DB20027E8EA /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		90D79F1E0FB09DB20027E8EA /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		90D79F1F0FB09DB20027E8EA /* marker-X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker-X.png"; sourceTree = "<group>"; };
+		90D79F200FB09DB20027E8EA /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		90D79F220FB09DB20027E8EA /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
+		90D79F230FB09DB20027E8EA /* marker-blue-withletter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker-blue-withletter.png"; sourceTree = "<group>"; };
+		90D79F240FB09DB20027E8EA /* marker-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker-blue.png"; sourceTree = "<group>"; };
+		90D79F250FB09DB20027E8EA /* marker-red-withletter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker-red-withletter.png"; sourceTree = "<group>"; };
+		90D79F260FB09DB20027E8EA /* marker-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker-red.png"; sourceTree = "<group>"; };
+		90D79F270FB09DB20027E8EA /* RMAbstractMercatorWebSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAbstractMercatorWebSource.h; sourceTree = "<group>"; };
+		90D79F280FB09DB20027E8EA /* RMAbstractMercatorWebSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAbstractMercatorWebSource.m; sourceTree = "<group>"; };
+		90D79F290FB09DB20027E8EA /* RMCachedTileSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCachedTileSource.h; sourceTree = "<group>"; };
+		90D79F2A0FB09DB20027E8EA /* RMCachedTileSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCachedTileSource.m; sourceTree = "<group>"; };
+		90D79F2B0FB09DB20027E8EA /* RMCloudMadeMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCloudMadeMapSource.h; sourceTree = "<group>"; };
+		90D79F2C0FB09DB20027E8EA /* RMCloudMadeMapSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCloudMadeMapSource.m; sourceTree = "<group>"; };
+		90D79F2D0FB09DB20027E8EA /* RMConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMConfiguration.h; sourceTree = "<group>"; };
+		90D79F2E0FB09DB20027E8EA /* RMConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMConfiguration.m; sourceTree = "<group>"; };
+		90D79F2F0FB09DB20027E8EA /* RMCoreAnimationRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCoreAnimationRenderer.h; sourceTree = "<group>"; };
+		90D79F300FB09DB20027E8EA /* RMCoreAnimationRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCoreAnimationRenderer.m; sourceTree = "<group>"; };
+		90D79F310FB09DB20027E8EA /* RMDatabaseCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDatabaseCache.h; sourceTree = "<group>"; };
+		90D79F320FB09DB20027E8EA /* RMDatabaseCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDatabaseCache.m; sourceTree = "<group>"; };
+		90D79F330FB09DB20027E8EA /* RMFileTileImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMFileTileImage.h; sourceTree = "<group>"; };
+		90D79F340FB09DB20027E8EA /* RMFileTileImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMFileTileImage.m; sourceTree = "<group>"; };
+		90D79F350FB09DB20027E8EA /* RMFoundation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RMFoundation.c; sourceTree = "<group>"; };
+		90D79F360FB09DB20027E8EA /* RMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMFoundation.h; sourceTree = "<group>"; };
+		90D79F370FB09DB20027E8EA /* RMFractalTileProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMFractalTileProjection.h; sourceTree = "<group>"; };
+		90D79F380FB09DB20027E8EA /* RMFractalTileProjection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMFractalTileProjection.m; sourceTree = "<group>"; };
+		90D79F390FB09DB20027E8EA /* RMGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGeoHash.h; sourceTree = "<group>"; };
+		90D79F3A0FB09DB20027E8EA /* RMGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMGeoHash.m; sourceTree = "<group>"; };
+		90D79F3B0FB09DB20027E8EA /* RMGlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGlobalConstants.h; sourceTree = "<group>"; };
+		90D79F3C0FB09DB20027E8EA /* RMLatLong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMLatLong.h; sourceTree = "<group>"; };
+		90D79F3D0FB09DB20027E8EA /* RMLayerSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMLayerSet.h; sourceTree = "<group>"; };
+		90D79F3E0FB09DB20027E8EA /* RMLayerSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMLayerSet.m; sourceTree = "<group>"; };
+		90D79F3F0FB09DB20027E8EA /* RMMapContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapContents.h; sourceTree = "<group>"; };
+		90D79F400FB09DB20027E8EA /* RMMapContents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMapContents.m; sourceTree = "<group>"; };
+		90D79F410FB09DB20027E8EA /* RMMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapLayer.h; sourceTree = "<group>"; };
+		90D79F420FB09DB20027E8EA /* RMMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMapLayer.m; sourceTree = "<group>"; };
+		90D79F430FB09DB20027E8EA /* RMMapRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapRenderer.h; sourceTree = "<group>"; };
+		90D79F440FB09DB20027E8EA /* RMMapRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMapRenderer.m; sourceTree = "<group>"; };
+		90D79F450FB09DB20027E8EA /* RMMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapView.h; sourceTree = "<group>"; };
+		90D79F460FB09DB20027E8EA /* RMMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMapView.m; sourceTree = "<group>"; };
+		90D79F470FB09DB20027E8EA /* RMMapViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapViewDelegate.h; sourceTree = "<group>"; };
+		90D79F480FB09DB20027E8EA /* RMMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMarker.h; sourceTree = "<group>"; };
+		90D79F490FB09DB20027E8EA /* RMMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMarker.m; sourceTree = "<group>"; };
+		90D79F4A0FB09DB20027E8EA /* RMMarkerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMarkerManager.h; sourceTree = "<group>"; };
+		90D79F4B0FB09DB20027E8EA /* RMMarkerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMarkerManager.m; sourceTree = "<group>"; };
+		90D79F4C0FB09DB20027E8EA /* RMMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMemoryCache.h; sourceTree = "<group>"; };
+		90D79F4D0FB09DB20027E8EA /* RMMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMemoryCache.m; sourceTree = "<group>"; };
+		90D79F4E0FB09DB20027E8EA /* RMMercatorToScreenProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMercatorToScreenProjection.h; sourceTree = "<group>"; };
+		90D79F4F0FB09DB20027E8EA /* RMMercatorToScreenProjection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMercatorToScreenProjection.m; sourceTree = "<group>"; };
+		90D79F500FB09DB20027E8EA /* RMMercatorToTileProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMercatorToTileProjection.h; sourceTree = "<group>"; };
+		90D79F510FB09DB20027E8EA /* RMOpenAerialMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOpenAerialMapSource.h; sourceTree = "<group>"; };
+		90D79F520FB09DB20027E8EA /* RMOpenAerialMapSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMOpenAerialMapSource.m; sourceTree = "<group>"; };
+		90D79F530FB09DB20027E8EA /* RMOpenStreetMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOpenStreetMapSource.h; sourceTree = "<group>"; };
+		90D79F540FB09DB20027E8EA /* RMOpenStreetMapSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMOpenStreetMapSource.m; sourceTree = "<group>"; };
+		90D79F550FB09DB20027E8EA /* RMPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPath.h; sourceTree = "<group>"; };
+		90D79F560FB09DB20027E8EA /* RMPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPath.m; sourceTree = "<group>"; };
+		90D79F570FB09DB20027E8EA /* RMPixel.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = RMPixel.c; sourceTree = "<group>"; };
+		90D79F580FB09DB20027E8EA /* RMPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPixel.h; sourceTree = "<group>"; };
+		90D79F590FB09DB30027E8EA /* RMProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMProjection.h; sourceTree = "<group>"; };
+		90D79F5A0FB09DB30027E8EA /* RMProjection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMProjection.m; sourceTree = "<group>"; };
+		90D79F5B0FB09DB30027E8EA /* RMTile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RMTile.c; sourceTree = "<group>"; };
+		90D79F5C0FB09DB30027E8EA /* RMTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTile.h; sourceTree = "<group>"; };
+		90D79F5D0FB09DB30027E8EA /* RMTileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileCache.h; sourceTree = "<group>"; };
+		90D79F5E0FB09DB30027E8EA /* RMTileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTileCache.m; sourceTree = "<group>"; };
+		90D79F5F0FB09DB30027E8EA /* RMTileCacheDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileCacheDAO.h; sourceTree = "<group>"; };
+		90D79F600FB09DB30027E8EA /* RMTileCacheDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTileCacheDAO.m; sourceTree = "<group>"; };
+		90D79F610FB09DB30027E8EA /* RMTiledLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTiledLayerController.h; sourceTree = "<group>"; };
+		90D79F620FB09DB30027E8EA /* RMTiledLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTiledLayerController.m; sourceTree = "<group>"; };
+		90D79F630FB09DB30027E8EA /* RMTileImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileImage.h; sourceTree = "<group>"; };
+		90D79F640FB09DB30027E8EA /* RMTileImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTileImage.m; sourceTree = "<group>"; };
+		90D79F650FB09DB30027E8EA /* RMTileImageSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileImageSet.h; sourceTree = "<group>"; };
+		90D79F660FB09DB30027E8EA /* RMTileImageSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTileImageSet.m; sourceTree = "<group>"; };
+		90D79F670FB09DB30027E8EA /* RMTileLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileLoader.h; sourceTree = "<group>"; };
+		90D79F680FB09DB30027E8EA /* RMTileLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTileLoader.m; sourceTree = "<group>"; };
+		90D79F690FB09DB30027E8EA /* RMTileProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileProxy.h; sourceTree = "<group>"; };
+		90D79F6A0FB09DB30027E8EA /* RMTileProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTileProxy.m; sourceTree = "<group>"; };
+		90D79F6B0FB09DB30027E8EA /* RMTileSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileSource.h; sourceTree = "<group>"; };
+		90D79F6C0FB09DB30027E8EA /* RMTilesUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTilesUpdateDelegate.h; sourceTree = "<group>"; };
+		90D79F6D0FB09DB30027E8EA /* RMTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTransform.h; sourceTree = "<group>"; };
+		90D79F6E0FB09DB30027E8EA /* RMTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTransform.m; sourceTree = "<group>"; };
+		90D79F6F0FB09DB30027E8EA /* RMVirtualEarthSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMVirtualEarthSource.h; sourceTree = "<group>"; };
+		90D79F700FB09DB30027E8EA /* RMVirtualEarthSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMVirtualEarthSource.m; sourceTree = "<group>"; };
+		90D79F710FB09DB30027E8EA /* RMWebTileImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMWebTileImage.h; sourceTree = "<group>"; };
+		90D79F720FB09DB30027E8EA /* RMWebTileImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMWebTileImage.m; sourceTree = "<group>"; };
+		90D79F730FB09DB30027E8EA /* RMYahooMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMYahooMapSource.h; sourceTree = "<group>"; };
+		90D79F740FB09DB30027E8EA /* RMYahooMapSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMYahooMapSource.m; sourceTree = "<group>"; };
+		90D79FE60FB0A4B90027E8EA /* PathKeeper_Prefix.pch */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = PathKeeper_Prefix.pch; sourceTree = "<group>"; };
+		90D7A0B60FB0BFD70027E8EA /* Proj4.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Proj4.xcodeproj; path = ../Proj4/Proj4.xcodeproj; sourceTree = SOURCE_ROOT; };
+		90D7A0D90FB0C0750027E8EA /* libProj4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libProj4.a; path = ../Proj4/build/Debug/libProj4.a; sourceTree = SOURCE_ROOT; };
+		90D7A0DE0FB0C1110027E8EA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		90D7A0E60FB0C1870027E8EA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		90D7A15A0FB0C5620027E8EA /* PSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSUtil.h; path = ../Openstreetmap/Map/PSUtil.h; sourceTree = SOURCE_ROOT; };
+		90D7A15B0FB0C5620027E8EA /* PSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSUtil.m; path = ../Openstreetmap/Map/PSUtil.m; sourceTree = SOURCE_ROOT; };
+		90D8D1590F0815B800CE3223 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = "../Handy Cocoa Classes/bwtoolkit/build/Release/BWToolkitFramework.framework"; sourceTree = SOURCE_ROOT; };
+		90D8D15F0F08CA4C00CE3223 /* BWToolkit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BWToolkit.xcodeproj; path = "../Handy Cocoa Classes/bwtoolkit/BWToolkit.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		90D8D1C00F08E3C700CE3223 /* PKKMLExport-pertrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PKKMLExport-pertrack.h"; sourceTree = "<group>"; };
+		90D8D1C10F08E3C700CE3223 /* PKKMLExport-pertrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PKKMLExport-pertrack.m"; sourceTree = "<group>"; };
+		90DC619F0F4206B7000C47E5 /* PKGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKGraphView.h; sourceTree = "<group>"; };
+		90DC61A00F4206B7000C47E5 /* PKGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKGraphView.m; sourceTree = "<group>"; };
+		90DCC3930ED9AF5A0052FBCC /* PKTrackWaypointOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTrackWaypointOutlineView.h; sourceTree = "<group>"; };
+		90DCC3940ED9AF5A0052FBCC /* PKTrackWaypointOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTrackWaypointOutlineView.m; sourceTree = "<group>"; };
+		90DEAA4410234FDA000A5CC1 /* CPDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDateFormatter.h; sourceTree = "<group>"; };
+		90DEAA4510234FDA000A5CC1 /* CPDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDateFormatter.m; sourceTree = "<group>"; };
+		90DF09740E45E0440096E3CD /* waypointView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = waypointView.xib; sourceTree = "<group>"; };
+		90DF09780E45E0780096E3CD /* PKWaypointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKWaypointViewController.h; sourceTree = "<group>"; };
+		90DF09790E45E0780096E3CD /* PKWaypointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKWaypointViewController.m; sourceTree = "<group>"; };
+		90DF09B00E46028D0096E3CD /* PKTrackMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTrackMapViewController.h; sourceTree = "<group>"; };
+		90DF09B10E46028D0096E3CD /* PKTrackMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTrackMapViewController.m; sourceTree = "<group>"; };
+		90DF09B50E4602E00096E3CD /* trackMapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = trackMapView.xib; sourceTree = "<group>"; };
+		90DF0A390E460C750096E3CD /* GPSSelectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPSSelectionView.xib; sourceTree = "<group>"; };
+		90DF0A3D0E460C930096E3CD /* PKGPSSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKGPSSelectionViewController.h; sourceTree = "<group>"; };
+		90DF0A3E0E460C930096E3CD /* PKGPSSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKGPSSelectionViewController.m; sourceTree = "<group>"; };
+		90DF0ACB0E46D56B0096E3CD /* trackMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trackMapView.h; sourceTree = "<group>"; };
+		90DF0ACC0E46D56B0096E3CD /* trackMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = trackMapView.m; sourceTree = "<group>"; };
+		90DF0C0C0E4786D90096E3CD /* AEConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEConverter.h; sourceTree = "<group>"; };
+		90DF0C0D0E4786D90096E3CD /* AEConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEConverter.m; sourceTree = "<group>"; };
+		90E2D2550FFF72400054FA2E /* MyDocument1.4.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument1.4.xcdatamodel; sourceTree = "<group>"; };
+		90E2D25A0FFF72870054FA2E /* MyDocument1.4.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument1.4.xcmappingmodel; sourceTree = "<group>"; };
+		90E622C00F0E6EB90074D5B9 /* trackSpeedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = trackSpeedView.xib; sourceTree = "<group>"; };
+		90E6233C0F0E725C0074D5B9 /* PKTrackGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTrackGraphViewController.h; sourceTree = "<group>"; };
+		90E6233D0F0E725C0074D5B9 /* PKTrackGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTrackGraphViewController.m; sourceTree = "<group>"; };
+		90E7D6960F76A2C300A7EB23 /* MyDocument1.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument1.0.xcdatamodel; sourceTree = "<group>"; };
+		90EAB6350F10F79400AAD3B6 /* MyDocument0.9.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument0.9.xcdatamodel; sourceTree = "<group>"; };
+		90EAB64B0F10F8DA00AAD3B6 /* MyDocument0.9.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument0.9.xcmappingmodel; sourceTree = "<group>"; };
+		90F2D0000F9CF9D2005424C0 /* MyDocument1.3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument1.3.xcdatamodel; sourceTree = "<group>"; };
+		90F2D01F0F9CFE32005424C0 /* MyDocument1.3.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument1.3.xcmappingmodel; sourceTree = "<group>"; };
+		90F801AC0E48E9B000AB155E /* PKTrackOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTrackOverviewViewController.h; sourceTree = "<group>"; };
+		90F801AD0E48E9B000AB155E /* PKTrackOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTrackOverviewViewController.m; sourceTree = "<group>"; };
+		90F801B10E48EA1300AB155E /* trackOverviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = trackOverviewView.xib; sourceTree = "<group>"; };
+		90FA7F0F0E73E9970048EE2A /* MyDocument0.2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument0.2.xcdatamodel; sourceTree = "<group>"; };
+		90FA7F670E74020F0048EE2A /* MyDocument0.2.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument0.2.xcmappingmodel; sourceTree = "<group>"; };
+		90FA7FCE0E74FA710048EE2A /* MyDocument0.3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument0.3.xcdatamodel; sourceTree = "<group>"; };
+		90FA7FD10E74FAB50048EE2A /* PKTrackCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTrackCategory.h; sourceTree = "<group>"; };
+		90FA7FD20E74FAB50048EE2A /* PKTrackCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTrackCategory.m; sourceTree = "<group>"; };
+		90FA7FD60E74FAF00048EE2A /* MyDocument0.3.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument0.3.xcmappingmodel; sourceTree = "<group>"; };
+		90FB49DD10A6014F003BF7F6 /* PKExportPluginProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKExportPluginProtocol.h; sourceTree = "<group>"; };
+		90FB49E510A60220003BF7F6 /* PKTestPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PKTestPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		90FB49E610A60220003BF7F6 /* PKTestPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PKTestPlugin-Info.plist"; sourceTree = "<group>"; };
+		90FB49EC10A60253003BF7F6 /* PKTestPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKTestPlugin.h; path = Plugins/PKTestPlugin.h; sourceTree = "<group>"; };
+		90FB49ED10A60253003BF7F6 /* PKTestPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKTestPlugin.m; path = Plugins/PKTestPlugin.m; sourceTree = "<group>"; };
+		90FB4A0310A604C5003BF7F6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		90FB4A0810A60535003BF7F6 /* PKExportPluginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKExportPluginManager.h; sourceTree = "<group>"; };
+		90FB4A0910A60535003BF7F6 /* PKExportPluginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKExportPluginManager.m; sourceTree = "<group>"; };
+		90FB4A1B10A6B2EF003BF7F6 /* pluginsPrefPanel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = pluginsPrefPanel.xib; sourceTree = "<group>"; };
+		90FB4A2010A6B42C003BF7F6 /* PKPluginsPrefPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKPluginsPrefPanel.h; sourceTree = "<group>"; };
+		90FB4A2110A6B42C003BF7F6 /* PKPluginsPrefPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKPluginsPrefPanel.m; sourceTree = "<group>"; };
+		90FB4B2410A6C520003BF7F6 /* PKPlugins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PKPlugins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90FB4B2510A6C520003BF7F6 /* PKPlugins-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PKPlugins-Info.plist"; sourceTree = "<group>"; };
+		90FB4B9510A72996003BF7F6 /* PKExportPluginOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKExportPluginOperation.h; sourceTree = "<group>"; };
+		90FB4B9610A72996003BF7F6 /* PKExportPluginOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKExportPluginOperation.m; sourceTree = "<group>"; };
+		90FD1CD30FB1D5620091C0FB /* PKTrackMO+RM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PKTrackMO+RM.h"; sourceTree = "<group>"; };
+		90FD1CD40FB1D5620091C0FB /* PKTrackMO+RM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PKTrackMO+RM.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		902E804F0E3C5C0C004493B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904CC8F10FDAC5B40007D537 /* CorePlot.framework in Frameworks */,
+				902E80650E3C5D5E004493B5 /* Cocoa.framework in Frameworks */,
+				9035A3B50E680E860078090E /* libcrypto.0.9.7.dylib in Frameworks */,
+				9035A3C50E6810EE0078090E /* libssl.0.9.dylib in Frameworks */,
+				90D8D15A0F0815B800CE3223 /* BWToolkitFramework.framework in Frameworks */,
+				90D7A0DA0FB0C0750027E8EA /* libProj4.a in Frameworks */,
+				90D7A0DF0FB0C1110027E8EA /* libsqlite3.dylib in Frameworks */,
+				90D7A0E70FB0C1870027E8EA /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905A787A10EF8FC80085673B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905A788210EF90000085673B /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90FB49E310A60220003BF7F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90FB4A0410A604C5003BF7F6 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90FB4B2210A6C520003BF7F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9035A3B40E680E860078090E /* libcrypto.0.9.7.dylib */,
+				9035A3C40E6810EE0078090E /* libssl.0.9.dylib */,
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				7788DA0506752A1600599AAD /* CoreData.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				902E80510E3C5C0C004493B5 /* PathKeeper.app */,
+				90FB49E510A60220003BF7F6 /* PKTestPlugin.bundle */,
+				90FB4B2410A6C520003BF7F6 /* PKPlugins.framework */,
+				905A787C10EF8FC80085673B /* DMSExport.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* PathKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				90FB49DA10A6012F003BF7F6 /* Plugin Framework */,
+				90E2D25A0FFF72870054FA2E /* MyDocument1.4.xcmappingmodel */,
+				904CC8F00FDAC5B40007D537 /* CorePlot.framework */,
+				90BC0C580F3F10E10062C418 /* CorePlot.xcodeproj */,
+				90D8D15F0F08CA4C00CE3223 /* BWToolkit.xcodeproj */,
+				90D79FE60FB0A4B90027E8EA /* PathKeeper_Prefix.pch */,
+				90D472A10ED9A8E300EC86C0 /* To change in model */,
+				E1B74B1A0667B4A90069E3BA /* Models and Mappings */,
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+				902E80530E3C5C0C004493B5 /* PathKeeper-Info.plist */,
+				90FB49E610A60220003BF7F6 /* PKTestPlugin-Info.plist */,
+				90FB4A0310A604C5003BF7F6 /* CoreData.framework */,
+				90FB4B2510A6C520003BF7F6 /* PKPlugins-Info.plist */,
+				905A787D10EF8FC80085673B /* DMSExport-Info.plist */,
+			);
+			name = PathKeeper;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9099B7030F99DF62007E1314 /* ValueTransformers */,
+				90DC619C0F420664000C47E5 /* Custom Views */,
+				90DCC4080ED9C03E0052FBCC /* Categories */,
+				906322540EB4F07E004102B0 /* PredicateTemplates */,
+				906320AC0EB49103004102B0 /* Preference Pane */,
+				9035A3870E6805A60078090E /* Utility */,
+				907FF8E00E50A22800BE6D38 /* TileManager */,
+				9006C6FB0E446DDF00FB92DB /* ViewControllers */,
+				90C301430E40E71F00B54B2D /* Managed Object */,
+				90C301420E40E6FA00B54B2D /* Operation related */,
+				900511300E2FCDFD000D5BB5 /* DocumentToolbarController.h */,
+				900511310E2FCDFD000D5BB5 /* DocumentToolbarController.m */,
+				901AF8B00EABC0F6001B4697 /* PKTrackLibraryItem.h */,
+				901AF8B10EABC0F6001B4697 /* PKTrackLibraryItem.m */,
+				90753EDD0E23838E00C68B2F /* PKTypes.h */,
+				90DF0C0C0E4786D90096E3CD /* AEConverter.h */,
+				90DF0C0D0E4786D90096E3CD /* AEConverter.m */,
+				90DF0ACB0E46D56B0096E3CD /* trackMapView.h */,
+				90DF0ACC0E46D56B0096E3CD /* trackMapView.m */,
+				90BD3F6D0E4C98290018846D /* PKOutlineRoot.h */,
+				90BD3F6E0E4C98290018846D /* PKOutlineRoot.m */,
+				907FFA000E50D97500BE6D38 /* PKMapSourceController.h */,
+				907FFA010E50D97500BE6D38 /* PKMapSourceController.m */,
+				901AF8140EABA27D001B4697 /* PKToolbarDelegate.h */,
+				901AF8150EABA27D001B4697 /* PKToolbarDelegate.m */,
+				901AF8250EABB578001B4697 /* PKTrackListTableView.h */,
+				901AF8260EABB578001B4697 /* PKTrackListTableView.m */,
+				909F71A00EAE415E00F62730 /* PKLibraryOutlineView.h */,
+				909F71A10EAE415E00F62730 /* PKLibraryOutlineView.m */,
+				90DCC3930ED9AF5A0052FBCC /* PKTrackWaypointOutlineView.h */,
+				90DCC3940ED9AF5A0052FBCC /* PKTrackWaypointOutlineView.m */,
+				9099B9730F9C8164007E1314 /* PKDetailView.h */,
+				9099B9740F9C8164007E1314 /* PKDetailView.m */,
+				90B2EC8A10CBCC2900C18A2A /* PKGraphInteractionLayer.h */,
+				90B2EC8B10CBCC2900C18A2A /* PKGraphInteractionLayer.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				90D7A15A0FB0C5620027E8EA /* PSUtil.h */,
+				90D7A15B0FB0C5620027E8EA /* PSUtil.m */,
+				90D79F140FB09DB20027E8EA /* Map */,
+				902E80570E3C5C51004493B5 /* pathKeeper_AppDelegate.h */,
+				902E80580E3C5C51004493B5 /* pathKeeper_AppDelegate.m */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				906320A70EB48C0A004102B0 /* Icons */,
+				906320730EB488C9004102B0 /* WindowNib */,
+				90961FC90EA9E44000C4D896 /* OldMyPlacesContent.kml */,
+				90961FC50EA9E3CB00C4D896 /* myplaces.kml */,
+				90FCA41B0E3F5937007A5F80 /* ViewNib */,
+				902E819B0E3C7306004493B5 /* mainWindow.xib */,
+				902E80850E3C5E01004493B5 /* pathKeeper.xib */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				8D15AC360486D014006FF6A4 /* Info.plist */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90D7A0D90FB0C0750027E8EA /* libProj4.a */,
+				90D7A0DE0FB0C1110027E8EA /* libsqlite3.dylib */,
+				90D7A0E60FB0C1870027E8EA /* QuartzCore.framework */,
+				90D7A0B60FB0BFD70027E8EA /* Proj4.xcodeproj */,
+				90D8D1590F0815B800CE3223 /* BWToolkitFramework.framework */,
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9006C6FB0E446DDF00FB92DB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9099B92B0F9C6F4E007E1314 /* MainWindowDelegate.h */,
+				9099B92C0F9C6F4E007E1314 /* MainWindowDelegate.m */,
+				90A2CBC10EA2573B00E5A3F6 /* DetailViewsControllers */,
+				90A2CBB70EA2565800E5A3F6 /* PKTrackListViewController.h */,
+				90A2CBB80EA2565800E5A3F6 /* PKTrackListViewController.m */,
+				902E81670E3C6F05004493B5 /* PKMainWindowController.h */,
+				902E81680E3C6F05004493B5 /* PKMainWindowController.m */,
+				9006C7440E45C59000FB92DB /* PKMainViewController.h */,
+				9006C7450E45C59000FB92DB /* PKMainViewController.m */,
+				902E81E50E3C74DD004493B5 /* PKDetailViewController.h */,
+				902E81E60E3C74DD004493B5 /* PKDetailViewController.m */,
+				90DF09B00E46028D0096E3CD /* PKTrackMapViewController.h */,
+				90DF09B10E46028D0096E3CD /* PKTrackMapViewController.m */,
+				90DF0A3D0E460C930096E3CD /* PKGPSSelectionViewController.h */,
+				90DF0A3E0E460C930096E3CD /* PKGPSSelectionViewController.m */,
+				90BD3F5D0E4C97400018846D /* PKSourceOutlineViewController.h */,
+				90BD3F5E0E4C97400018846D /* PKSourceOutlineViewController.m */,
+				9006C7060E446E2A00FB92DB /* XSWindowController.h */,
+				9006C7070E446E2A00FB92DB /* XSWindowController.m */,
+				9006C7140E446EAA00FB92DB /* XSViewController.h */,
+				9006C7150E446EAA00FB92DB /* XSViewController.m */,
+				903C02610ED7181F00426C86 /* PKImportGPSFilesSheetController.h */,
+				903C02620ED7181F00426C86 /* PKImportGPSFilesSheetController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		902282D40F8BB5A4006E2091 /* CoreRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				9099B8220F9B3275007E1314 /* PKCountCell.h */,
+				9099B8230F9B3275007E1314 /* PKCountCell.m */,
+				906883200F8D346A00FA9282 /* Group.h */,
+				906883210F8D346A00FA9282 /* Group.m */,
+				902282E10F8BB717006E2091 /* CRManagedObject.h */,
+				902282E20F8BB717006E2091 /* CRManagedObject.m */,
+				902282E30F8BB717006E2091 /* ManualGroup.h */,
+				902282E40F8BB717006E2091 /* ManualGroup.m */,
+				902282E50F8BB717006E2091 /* SmartGroup.h */,
+				902282E60F8BB717006E2091 /* SmartGroup.m */,
+			);
+			name = CoreRecipes;
+			sourceTree = "<group>";
+		};
+		9035A3870E6805A60078090E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9035A37B0E6805700078090E /* NSData_AMDigest.h */,
+				9035A37C0E6805700078090E /* NSData_AMDigest.m */,
+				905A780510EF89670085673B /* JDKTempDirectory.h */,
+				905A780610EF89670085673B /* JDKTempDirectory.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		904CC8820FDAC3D20007D537 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				904CC88B0FDAC3D20007D537 /* CorePlot.framework */,
+				906A6DC810B82D9500013053 /* UnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		905A785810EF8ED50085673B /* DMSPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				905A785D10EF8F1E0085673B /* DMSExport.h */,
+				905A785E10EF8F1E0085673B /* DMSExport.m */,
+			);
+			name = DMSPlugin;
+			sourceTree = "<group>";
+		};
+		906320730EB488C9004102B0 /* WindowNib */ = {
+			isa = PBXGroup;
+			children = (
+				90B2ED1410CCE56B00C18A2A /* pointInteractionWindow.xib */,
+				906320870EB48AA7004102B0 /* preferencePanel.xib */,
+			);
+			name = WindowNib;
+			sourceTree = "<group>";
+		};
+		906320A70EB48C0A004102B0 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				90D375BE0F939F450098006D /* image_group_library.tiff */,
+				90D375BF0F939F450098006D /* image_group_shared.tiff */,
+				90D375C00F939F450098006D /* image_group_smart.tiff */,
+				9063213F0EB4A958004102B0 /* categoriesIcon.tif */,
+				901AF81C0EABA992001B4697 /* MyPlaces.png */,
+				903829B70E2392CA0085FCAC /* ImportGPXIcon.png */,
+				9021ED140E2E89AE00BE84D5 /* PathKeeperIcon.icns */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		906320AC0EB49103004102B0 /* Preference Pane */ = {
+			isa = PBXGroup;
+			children = (
+				906320760EB488EE004102B0 /* PKPreferenceController.h */,
+				906320770EB488EE004102B0 /* PKPreferenceController.m */,
+				906320DD0EB493DC004102B0 /* PKGeneralPrefPanel.h */,
+				906320DE0EB493DC004102B0 /* PKGeneralPrefPanel.m */,
+				906320E00EB493FC004102B0 /* PKStylesPrefPanel.h */,
+				906320E10EB493FC004102B0 /* PKStylesPrefPanel.m */,
+				906321880EB4B339004102B0 /* PKCategoriesPrefPanel.h */,
+				906321890EB4B339004102B0 /* PKCategoriesPrefPanel.m */,
+				90FB4A2010A6B42C003BF7F6 /* PKPluginsPrefPanel.h */,
+				90FB4A2110A6B42C003BF7F6 /* PKPluginsPrefPanel.m */,
+			);
+			name = "Preference Pane";
+			sourceTree = "<group>";
+		};
+		906321600EB4AB1B004102B0 /* PreferencePanes */ = {
+			isa = PBXGroup;
+			children = (
+				90FB4A1B10A6B2EF003BF7F6 /* pluginsPrefPanel.xib */,
+				906320E30EB4942A004102B0 /* stylesPrefPanel.xib */,
+				906320E50EB49435004102B0 /* generalPrefPanel.xib */,
+				906321610EB4AB4C004102B0 /* categoriesPrefPanel.xib */,
+			);
+			name = PreferencePanes;
+			sourceTree = "<group>";
+		};
+		906322540EB4F07E004102B0 /* PredicateTemplates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PredicateTemplates;
+			sourceTree = "<group>";
+		};
+		907FF8E00E50A22800BE6D38 /* TileManager */ = {
+			isa = PBXGroup;
+			children = (
+				907FF8F20E50A94400BE6D38 /* PSTileGroup.h */,
+				907FF8F30E50A94400BE6D38 /* PSTileGroup.m */,
+				907FF8F40E50A94400BE6D38 /* PSTileManager.h */,
+				907FF8F50E50A94400BE6D38 /* PSTileManager.m */,
+				907FF8E30E50A27000BE6D38 /* PSTileMO.h */,
+				907FF8E40E50A27000BE6D38 /* PSTileMO.m */,
+			);
+			name = TileManager;
+			sourceTree = "<group>";
+		};
+		9099B7030F99DF62007E1314 /* ValueTransformers */ = {
+			isa = PBXGroup;
+			children = (
+				90DEAA4410234FDA000A5CC1 /* CPDateFormatter.h */,
+				90DEAA4510234FDA000A5CC1 /* CPDateFormatter.m */,
+				9099B7040F99DF84007E1314 /* PKArrayCountValueTransformer.h */,
+				9099B7050F99DF84007E1314 /* PKArrayCountValueTransformer.m */,
+				9099B7D90F9B22F3007E1314 /* PKNotArrayCountValueTransformer.h */,
+				9099B7CF0F9B2294007E1314 /* PKNotArrayCountValueTransformer.m */,
+				9099B7A20F9B1C54007E1314 /* PKAEOperationTooltipValueTransformer.h */,
+				9099B7A30F9B1C54007E1314 /* PKAEOperationTooltipValueTransformer.m */,
+				906A6E0A10B834DD00013053 /* PKDateToNumberTransformer.h */,
+				906A6E0B10B834DD00013053 /* PKDateToNumberTransformer.m */,
+			);
+			name = ValueTransformers;
+			sourceTree = "<group>";
+		};
+		909F71E90EAE47C900F62730 /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				909F71EA0EAE47E500F62730 /* TrackListPredicateEditor.xib */,
+				903C025C0ED7150000426C86 /* importGPSFiles.xib */,
+			);
+			name = Sheets;
+			sourceTree = "<group>";
+		};
+		90A2CBC10EA2573B00E5A3F6 /* DetailViewsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				90D472150ED99B2E00EC86C0 /* PKTracksWaypointController.h */,
+				90D472160ED99B2E00EC86C0 /* PKTracksWaypointController.m */,
+				902E80AB0E3C63DF004493B5 /* trackViewController.h */,
+				902E80AC0E3C63DF004493B5 /* trackViewController.m */,
+				90DF09780E45E0780096E3CD /* PKWaypointViewController.h */,
+				90DF09790E45E0780096E3CD /* PKWaypointViewController.m */,
+				90F801AC0E48E9B000AB155E /* PKTrackOverviewViewController.h */,
+				90F801AD0E48E9B000AB155E /* PKTrackOverviewViewController.m */,
+				90E6233C0F0E725C0074D5B9 /* PKTrackGraphViewController.h */,
+				90E6233D0F0E725C0074D5B9 /* PKTrackGraphViewController.m */,
+			);
+			name = DetailViewsControllers;
+			sourceTree = "<group>";
+		};
+		90C301420E40E6FA00B54B2D /* Operation related */ = {
+			isa = PBXGroup;
+			children = (
+				903829B30E2392CA0085FCAC /* AEOperation.h */,
+				903829B40E2392CA0085FCAC /* AEOperation.m */,
+				903829B50E2392CA0085FCAC /* GPXImportOperation.h */,
+				903829B60E2392CA0085FCAC /* GPXImportOperation.m */,
+				90961FBE0EA9E33800C4D896 /* PKKMLExport.h */,
+				90961FBF0EA9E33800C4D896 /* PKKMLExport.m */,
+				90D8D1C00F08E3C700CE3223 /* PKKMLExport-pertrack.h */,
+				90D8D1C10F08E3C700CE3223 /* PKKMLExport-pertrack.m */,
+				90FB4B9510A72996003BF7F6 /* PKExportPluginOperation.h */,
+				90FB4B9610A72996003BF7F6 /* PKExportPluginOperation.m */,
+			);
+			name = "Operation related";
+			sourceTree = "<group>";
+		};
+		90C301430E40E71F00B54B2D /* Managed Object */ = {
+			isa = PBXGroup;
+			children = (
+				90FD1CD30FB1D5620091C0FB /* PKTrackMO+RM.h */,
+				90FD1CD40FB1D5620091C0FB /* PKTrackMO+RM.m */,
+				902282D40F8BB5A4006E2091 /* CoreRecipes */,
+				903829510E2388C90085FCAC /* PKTrackMO.h */,
+				903829520E2388C90085FCAC /* PKTrackMO.m */,
+				90753EFE0E23883A00C68B2F /* PKWaypointMO.h */,
+				90753EFF0E23883A00C68B2F /* PKWaypointMO.m */,
+				90753E8A0E237DF800C68B2F /* AEGPSBabelDeviceMO.h */,
+				90753E8B0E237DF800C68B2F /* AEGPSBabelDeviceMO.m */,
+				90753E800E237DA100C68B2F /* AEGPSRecieverMO.h */,
+				90753E810E237DA100C68B2F /* AEGPSRecieverMO.m */,
+				90FA7FD10E74FAB50048EE2A /* PKTrackCategory.h */,
+				90FA7FD20E74FAB50048EE2A /* PKTrackCategory.m */,
+				9063200C0EB35F58004102B0 /* PKSmartLibraryItem.h */,
+				9063200D0EB35F58004102B0 /* PKSmartLibraryItem.m */,
+				9063200E0EB35F58004102B0 /* PKStyleMO.h */,
+				9063200F0EB35F58004102B0 /* PKStyleMO.m */,
+			);
+			name = "Managed Object";
+			sourceTree = "<group>";
+		};
+		90D79F140FB09DB20027E8EA /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				90D79F150FB09DB20027E8EA /* Cache.xcdatamodel */,
+				90D79F160FB09DB20027E8EA /* FMDB */,
+				90D79F1F0FB09DB20027E8EA /* marker-X.png */,
+				90D79F200FB09DB20027E8EA /* README.txt */,
+				90D79F210FB09DB20027E8EA /* Resources */,
+				90D79F270FB09DB20027E8EA /* RMAbstractMercatorWebSource.h */,
+				90D79F280FB09DB20027E8EA /* RMAbstractMercatorWebSource.m */,
+				90D79F290FB09DB20027E8EA /* RMCachedTileSource.h */,
+				90D79F2A0FB09DB20027E8EA /* RMCachedTileSource.m */,
+				90D79F2B0FB09DB20027E8EA /* RMCloudMadeMapSource.h */,
+				90D79F2C0FB09DB20027E8EA /* RMCloudMadeMapSource.m */,
+				90D79F2D0FB09DB20027E8EA /* RMConfiguration.h */,
+				90D79F2E0FB09DB20027E8EA /* RMConfiguration.m */,
+				90D79F2F0FB09DB20027E8EA /* RMCoreAnimationRenderer.h */,
+				90D79F300FB09DB20027E8EA /* RMCoreAnimationRenderer.m */,
+				90D79F310FB09DB20027E8EA /* RMDatabaseCache.h */,
+				90D79F320FB09DB20027E8EA /* RMDatabaseCache.m */,
+				90D79F330FB09DB20027E8EA /* RMFileTileImage.h */,
+				90D79F340FB09DB20027E8EA /* RMFileTileImage.m */,
+				90D79F350FB09DB20027E8EA /* RMFoundation.c */,
+				90D79F360FB09DB20027E8EA /* RMFoundation.h */,
+				90D79F370FB09DB20027E8EA /* RMFractalTileProjection.h */,
+				90D79F380FB09DB20027E8EA /* RMFractalTileProjection.m */,
+				90D79F390FB09DB20027E8EA /* RMGeoHash.h */,
+				90D79F3A0FB09DB20027E8EA /* RMGeoHash.m */,
+				90D79F3B0FB09DB20027E8EA /* RMGlobalConstants.h */,
+				90D79F3C0FB09DB20027E8EA /* RMLatLong.h */,
+				90D79F3D0FB09DB20027E8EA /* RMLayerSet.h */,
+				90D79F3E0FB09DB20027E8EA /* RMLayerSet.m */,
+				90D79F3F0FB09DB20027E8EA /* RMMapContents.h */,
+				90D79F400FB09DB20027E8EA /* RMMapContents.m */,
+				90D79F410FB09DB20027E8EA /* RMMapLayer.h */,
+				90D79F420FB09DB20027E8EA /* RMMapLayer.m */,
+				90D79F430FB09DB20027E8EA /* RMMapRenderer.h */,
+				90D79F440FB09DB20027E8EA /* RMMapRenderer.m */,
+				90D79F450FB09DB20027E8EA /* RMMapView.h */,
+				90D79F460FB09DB20027E8EA /* RMMapView.m */,
+				90D79F470FB09DB20027E8EA /* RMMapViewDelegate.h */,
+				90D79F480FB09DB20027E8EA /* RMMarker.h */,
+				90D79F490FB09DB20027E8EA /* RMMarker.m */,
+				90D79F4A0FB09DB20027E8EA /* RMMarkerManager.h */,
+				90D79F4B0FB09DB20027E8EA /* RMMarkerManager.m */,
+				90D79F4C0FB09DB20027E8EA /* RMMemoryCache.h */,
+				90D79F4D0FB09DB20027E8EA /* RMMemoryCache.m */,
+				90D79F4E0FB09DB20027E8EA /* RMMercatorToScreenProjection.h */,
+				90D79F4F0FB09DB20027E8EA /* RMMercatorToScreenProjection.m */,
+				90D79F500FB09DB20027E8EA /* RMMercatorToTileProjection.h */,
+				90D79F510FB09DB20027E8EA /* RMOpenAerialMapSource.h */,
+				90D79F520FB09DB20027E8EA /* RMOpenAerialMapSource.m */,
+				90D79F530FB09DB20027E8EA /* RMOpenStreetMapSource.h */,
+				90D79F540FB09DB20027E8EA /* RMOpenStreetMapSource.m */,
+				90D79F550FB09DB20027E8EA /* RMPath.h */,
+				90D79F560FB09DB20027E8EA /* RMPath.m */,
+				90D79F570FB09DB20027E8EA /* RMPixel.c */,
+				90D79F580FB09DB20027E8EA /* RMPixel.h */,
+				90D79F590FB09DB30027E8EA /* RMProjection.h */,
+				90D79F5A0FB09DB30027E8EA /* RMProjection.m */,
+				90D79F5B0FB09DB30027E8EA /* RMTile.c */,
+				90D79F5C0FB09DB30027E8EA /* RMTile.h */,
+				90D79F5D0FB09DB30027E8EA /* RMTileCache.h */,
+				90D79F5E0FB09DB30027E8EA /* RMTileCache.m */,
+				90D79F5F0FB09DB30027E8EA /* RMTileCacheDAO.h */,
+				90D79F600FB09DB30027E8EA /* RMTileCacheDAO.m */,
+				90D79F610FB09DB30027E8EA /* RMTiledLayerController.h */,
+				90D79F620FB09DB30027E8EA /* RMTiledLayerController.m */,
+				90D79F630FB09DB30027E8EA /* RMTileImage.h */,
+				90D79F640FB09DB30027E8EA /* RMTileImage.m */,
+				90D79F650FB09DB30027E8EA /* RMTileImageSet.h */,
+				90D79F660FB09DB30027E8EA /* RMTileImageSet.m */,
+				90D79F670FB09DB30027E8EA /* RMTileLoader.h */,
+				90D79F680FB09DB30027E8EA /* RMTileLoader.m */,
+				90D79F690FB09DB30027E8EA /* RMTileProxy.h */,
+				90D79F6A0FB09DB30027E8EA /* RMTileProxy.m */,
+				90D79F6B0FB09DB30027E8EA /* RMTileSource.h */,
+				90D79F6C0FB09DB30027E8EA /* RMTilesUpdateDelegate.h */,
+				90D79F6D0FB09DB30027E8EA /* RMTransform.h */,
+				90D79F6E0FB09DB30027E8EA /* RMTransform.m */,
+				90D79F6F0FB09DB30027E8EA /* RMVirtualEarthSource.h */,
+				90D79F700FB09DB30027E8EA /* RMVirtualEarthSource.m */,
+				90D79F710FB09DB30027E8EA /* RMWebTileImage.h */,
+				90D79F720FB09DB30027E8EA /* RMWebTileImage.m */,
+				90D79F730FB09DB30027E8EA /* RMYahooMapSource.h */,
+				90D79F740FB09DB30027E8EA /* RMYahooMapSource.m */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		90D79F160FB09DB20027E8EA /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				90D79F170FB09DB20027E8EA /* FMDatabase.h */,
+				90D79F180FB09DB20027E8EA /* FMDatabase.m */,
+				90D79F190FB09DB20027E8EA /* FMDatabaseAdditions.h */,
+				90D79F1A0FB09DB20027E8EA /* FMDatabaseAdditions.m */,
+				90D79F1B0FB09DB20027E8EA /* fmdb.m */,
+				90D79F1C0FB09DB20027E8EA /* FMResultSet.h */,
+				90D79F1D0FB09DB20027E8EA /* FMResultSet.m */,
+				90D79F1E0FB09DB20027E8EA /* README.txt */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		90D79F210FB09DB20027E8EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				90D79F220FB09DB20027E8EA /* loading.png */,
+				90D79F230FB09DB20027E8EA /* marker-blue-withletter.png */,
+				90D79F240FB09DB20027E8EA /* marker-blue.png */,
+				90D79F250FB09DB20027E8EA /* marker-red-withletter.png */,
+				90D79F260FB09DB20027E8EA /* marker-red.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		90D7A0B70FB0BFD70027E8EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90D7A0BE0FB0BFD70027E8EA /* libProj4.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90D8D1600F08CA4C00CE3223 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90D8D1660F08CA4D00CE3223 /* BWToolkit.ibplugin */,
+				90D8D1680F08CA4D00CE3223 /* BWToolkitFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90DC619C0F420664000C47E5 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				90DC619F0F4206B7000C47E5 /* PKGraphView.h */,
+				90DC61A00F4206B7000C47E5 /* PKGraphView.m */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		90DCC4080ED9C03E0052FBCC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9098DA5D10775B720011F2AF /* GroupKMLExport.h */,
+				9098DA5E10775B720011F2AF /* GroupKMLExport.m */,
+				906320210EB36A14004102B0 /* NSColorHexValue.h */,
+				906320220EB36A14004102B0 /* NSColorHexValue.m */,
+				9066A7BF0FE3C41E00BC3421 /* NSDateDecimalValue.h */,
+				9066A7C00FE3C41E00BC3421 /* NSDateDecimalValue.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		90FB49DA10A6012F003BF7F6 /* Plugin Framework */ = {
+			isa = PBXGroup;
+			children = (
+				90FB4A0010A6033D003BF7F6 /* Plugins */,
+				90FB49DD10A6014F003BF7F6 /* PKExportPluginProtocol.h */,
+				90FB4A0810A60535003BF7F6 /* PKExportPluginManager.h */,
+				90FB4A0910A60535003BF7F6 /* PKExportPluginManager.m */,
+			);
+			name = "Plugin Framework";
+			sourceTree = "<group>";
+		};
+		90FB4A0010A6033D003BF7F6 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				905A785810EF8ED50085673B /* DMSPlugin */,
+				90FB4A0110A60344003BF7F6 /* TestPlugin */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+		90FB4A0110A60344003BF7F6 /* TestPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				90FB49EC10A60253003BF7F6 /* PKTestPlugin.h */,
+				90FB49ED10A60253003BF7F6 /* PKTestPlugin.m */,
+			);
+			name = TestPlugin;
+			sourceTree = "<group>";
+		};
+		90FCA41B0E3F5937007A5F80 /* ViewNib */ = {
+			isa = PBXGroup;
+			children = (
+				906321600EB4AB1B004102B0 /* PreferencePanes */,
+				909F71E90EAE47C900F62730 /* Sheets */,
+				90A2CBBC0EA256B200E5A3F6 /* trackListView.xib */,
+				9006C73F0E45C4AF00FB92DB /* mainView.xib */,
+				90BD3F9E0E4C9BD90018846D /* oldTrackView.xib */,
+				902E82060E3C7548004493B5 /* detailView.xib */,
+				90DF09740E45E0440096E3CD /* waypointView.xib */,
+				90DF09B50E4602E00096E3CD /* trackMapView.xib */,
+				90F801B10E48EA1300AB155E /* trackOverviewView.xib */,
+				90E622C00F0E6EB90074D5B9 /* trackSpeedView.xib */,
+				90DF0A390E460C750096E3CD /* GPSSelectionView.xib */,
+				90BD3F3C0E4C93F70018846D /* sourceOutlineView.xib */,
+			);
+			name = ViewNib;
+			sourceTree = "<group>";
+		};
+		E1B74B1A0667B4A90069E3BA /* Models and Mappings */ = {
+			isa = PBXGroup;
+			children = (
+				90C301C20E40F30600B54B2D /* MyDocument.xcdatamodeld */,
+				907FF8E80E50A2B000BE6D38 /* PSTileManager.xcdatamodel */,
+				90C301ED0E40FF0000B54B2D /* MyDocument0.1.xcmappingmodel */,
+				90FA7F670E74020F0048EE2A /* MyDocument0.2.xcmappingmodel */,
+				90FA7FD60E74FAF00048EE2A /* MyDocument0.3.xcmappingmodel */,
+				904DFDCC0EAFB86C00DE8693 /* MyDocument0.4.xcmappingmodel */,
+				906320280EB485A0004102B0 /* MyDocument0.5.xcmappingmodel */,
+				908BA7170EB7A5520002CABD /* MyDocument0.6.xcmappingmodel */,
+				90A9D06C0EBDC68300A635F8 /* MyDocument0.8.xcmappingmodel */,
+				90EAB64B0F10F8DA00AAD3B6 /* MyDocument0.9.xcmappingmodel */,
+				9038AC3F0F76A44900589315 /* MyDocument1.0.xcmappingmodel */,
+				9032E7CB0F937A99007610B7 /* MyDocument1.1.xcmappingmodel */,
+				90D3768D0F93BDC90098006D /* MyDocument1.2.xcmappingmodel */,
+				90F2D01F0F9CFE32005424C0 /* MyDocument1.3.xcmappingmodel */,
+			);
+			name = "Models and Mappings";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		90FB4B1F10A6C520003BF7F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90FB4B2910A6C534003BF7F6 /* PKExportPluginProtocol.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		902E80500E3C5C0C004493B5 /* PathKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 902E80560E3C5C0D004493B5 /* Build configuration list for PBXNativeTarget "PathKeeper" */;
+			buildPhases = (
+				90DC61C60F420829000C47E5 /* Copy Frameworks */,
+				90F76CF90FC97FF600CBA31C /* CopyFiles */,
+				902E804D0E3C5C0C004493B5 /* Resources */,
+				902E804E0E3C5C0C004493B5 /* Sources */,
+				902E804F0E3C5C0C004493B5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90FB4B2D10A6C54D003BF7F6 /* PBXTargetDependency */,
+			);
+			name = PathKeeper;
+			productName = PathKeeper;
+			productReference = 902E80510E3C5C0C004493B5 /* PathKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		905A787B10EF8FC80085673B /* DMSExport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 905A788010EF8FCA0085673B /* Build configuration list for PBXNativeTarget "DMSExport" */;
+			buildPhases = (
+				905A787810EF8FC80085673B /* Resources */,
+				905A787910EF8FC80085673B /* Sources */,
+				905A787A10EF8FC80085673B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				905A788510EF900E0085673B /* PBXTargetDependency */,
+			);
+			name = DMSExport;
+			productName = DMSExport;
+			productReference = 905A787C10EF8FC80085673B /* DMSExport.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		90FB49E410A60220003BF7F6 /* PKTestPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90FB49E910A60224003BF7F6 /* Build configuration list for PBXNativeTarget "PKTestPlugin" */;
+			buildPhases = (
+				90FB49E110A60220003BF7F6 /* Resources */,
+				90FB49E210A60220003BF7F6 /* Sources */,
+				90FB49E310A60220003BF7F6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90FB4B2B10A6C549003BF7F6 /* PBXTargetDependency */,
+			);
+			name = PKTestPlugin;
+			productName = PKTestPlugin;
+			productReference = 90FB49E510A60220003BF7F6 /* PKTestPlugin.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		90FB4B2310A6C520003BF7F6 /* PKPlugins */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90FB4B2810A6C522003BF7F6 /* Build configuration list for PBXNativeTarget "PKPlugins" */;
+			buildPhases = (
+				90FB4B1F10A6C520003BF7F6 /* Headers */,
+				90FB4B2010A6C520003BF7F6 /* Resources */,
+				90FB4B2110A6C520003BF7F6 /* Sources */,
+				90FB4B2210A6C520003BF7F6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PKPlugins;
+			productName = PKPlugins;
+			productReference = 90FB4B2410A6C520003BF7F6 /* PKPlugins.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 26FC0AA90875C8B900E6366F /* Build configuration list for PBXProject "PathKeeper" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* PathKeeper */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 90D8D1600F08CA4C00CE3223 /* Products */;
+					ProjectRef = 90D8D15F0F08CA4C00CE3223 /* BWToolkit.xcodeproj */;
+				},
+				{
+					ProductGroup = 904CC8820FDAC3D20007D537 /* Products */;
+					ProjectRef = 90BC0C580F3F10E10062C418 /* CorePlot.xcodeproj */;
+				},
+				{
+					ProductGroup = 90D7A0B70FB0BFD70027E8EA /* Products */;
+					ProjectRef = 90D7A0B60FB0BFD70027E8EA /* Proj4.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				902E80500E3C5C0C004493B5 /* PathKeeper */,
+				90FB49E410A60220003BF7F6 /* PKTestPlugin */,
+				90FB4B2310A6C520003BF7F6 /* PKPlugins */,
+				905A787B10EF8FC80085673B /* DMSExport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		904CC88B0FDAC3D20007D537 /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = 904CC88A0FDAC3D20007D537 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		906A6DC810B82D9500013053 /* UnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.octest;
+			remoteRef = 906A6DC710B82D9500013053 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90D7A0BE0FB0BFD70027E8EA /* libProj4.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProj4.a;
+			remoteRef = 90D7A0BD0FB0BFD70027E8EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90D8D1660F08CA4D00CE3223 /* BWToolkit.ibplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BWToolkit.ibplugin;
+			remoteRef = 90D8D1650F08CA4D00CE3223 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90D8D1680F08CA4D00CE3223 /* BWToolkitFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BWToolkitFramework.framework;
+			remoteRef = 90D8D1670F08CA4D00CE3223 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		902E804D0E3C5C0C004493B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				902E80870E3C5E01004493B5 /* pathKeeper.xib in Resources */,
+				902E80A10E3C617B004493B5 /* ImportGPXIcon.png in Resources */,
+				902E819D0E3C7306004493B5 /* mainWindow.xib in Resources */,
+				902E82070E3C7548004493B5 /* detailView.xib in Resources */,
+				9006C7400E45C4AF00FB92DB /* mainView.xib in Resources */,
+				90DF09750E45E0440096E3CD /* waypointView.xib in Resources */,
+				90DF09B60E4602E00096E3CD /* trackMapView.xib in Resources */,
+				90DF0A3A0E460C750096E3CD /* GPSSelectionView.xib in Resources */,
+				90F801B20E48EA1300AB155E /* trackOverviewView.xib in Resources */,
+				90BD3F3D0E4C93F70018846D /* sourceOutlineView.xib in Resources */,
+				90BD3F9F0E4C9BD90018846D /* oldTrackView.xib in Resources */,
+				90A2CBBD0EA256B200E5A3F6 /* trackListView.xib in Resources */,
+				90961FC60EA9E3CB00C4D896 /* myplaces.kml in Resources */,
+				901AF81D0EABA992001B4697 /* MyPlaces.png in Resources */,
+				909F71EB0EAE47E500F62730 /* TrackListPredicateEditor.xib in Resources */,
+				906320880EB48AA7004102B0 /* preferencePanel.xib in Resources */,
+				906320E40EB4942A004102B0 /* stylesPrefPanel.xib in Resources */,
+				906320E60EB49435004102B0 /* generalPrefPanel.xib in Resources */,
+				906321400EB4A958004102B0 /* categoriesIcon.tif in Resources */,
+				906321620EB4AB4C004102B0 /* categoriesPrefPanel.xib in Resources */,
+				903C025D0ED7150000426C86 /* importGPSFiles.xib in Resources */,
+				90D472A20ED9A8E300EC86C0 /* To change in model in Resources */,
+				90E622C10F0E6EB90074D5B9 /* trackSpeedView.xib in Resources */,
+				90D375C10F939F450098006D /* image_group_library.tiff in Resources */,
+				90D375C20F939F450098006D /* image_group_shared.tiff in Resources */,
+				90D375C30F939F450098006D /* image_group_smart.tiff in Resources */,
+				90D79F7B0FB09DB30027E8EA /* marker-X.png in Resources */,
+				90D79F7D0FB09DB30027E8EA /* loading.png in Resources */,
+				90D79F7E0FB09DB30027E8EA /* marker-blue-withletter.png in Resources */,
+				90D79F7F0FB09DB30027E8EA /* marker-blue.png in Resources */,
+				90D79F800FB09DB30027E8EA /* marker-red-withletter.png in Resources */,
+				90D79F810FB09DB30027E8EA /* marker-red.png in Resources */,
+				90FB4A2C10A6B6F5003BF7F6 /* pluginsPrefPanel.xib in Resources */,
+				90B2ED1510CCE56B00C18A2A /* pointInteractionWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905A787810EF8FC80085673B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90FB49E110A60220003BF7F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90FB4B2010A6C520003BF7F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		902E804E0E3C5C0C004493B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C301C40E40F30600B54B2D /* MyDocument.xcdatamodeld in Sources */,
+				902E809D0E3C6175004493B5 /* AEGPSBabelDeviceMO.m in Sources */,
+				902E809E0E3C6176004493B5 /* AEGPSRecieverMO.m in Sources */,
+				902E809F0E3C6177004493B5 /* AEOperation.m in Sources */,
+				902E80A00E3C617A004493B5 /* GPXImportOperation.m in Sources */,
+				902E80A20E3C6186004493B5 /* PKWaypointMO.m in Sources */,
+				902E80A30E3C6188004493B5 /* PKTrackMO.m in Sources */,
+				902E81690E3C6F05004493B5 /* PKMainWindowController.m in Sources */,
+				902E81E70E3C74DD004493B5 /* PKDetailViewController.m in Sources */,
+				90C301EE0E40FF0000B54B2D /* MyDocument0.1.xcmappingmodel in Sources */,
+				9006C7080E446E2A00FB92DB /* XSWindowController.m in Sources */,
+				9006C7160E446EAA00FB92DB /* XSViewController.m in Sources */,
+				9006C7460E45C59000FB92DB /* PKMainViewController.m in Sources */,
+				90DF097A0E45E0780096E3CD /* PKWaypointViewController.m in Sources */,
+				90DF09B20E46028D0096E3CD /* PKTrackMapViewController.m in Sources */,
+				90DF0A3F0E460C930096E3CD /* PKGPSSelectionViewController.m in Sources */,
+				90DF0ACD0E46D56B0096E3CD /* trackMapView.m in Sources */,
+				90DF0C0E0E4786D90096E3CD /* AEConverter.m in Sources */,
+				90F801AE0E48E9B000AB155E /* PKTrackOverviewViewController.m in Sources */,
+				90BD3F5F0E4C97400018846D /* PKSourceOutlineViewController.m in Sources */,
+				907FF8E50E50A27000BE6D38 /* PSTileMO.m in Sources */,
+				907FF8F60E50A94400BE6D38 /* PSTileGroup.m in Sources */,
+				907FF8F70E50A94400BE6D38 /* PSTileManager.m in Sources */,
+				907FF9E20E50C9D400BE6D38 /* PSTileManager.xcdatamodel in Sources */,
+				907FFA020E50D97500BE6D38 /* PKMapSourceController.m in Sources */,
+				9035A37D0E6805700078090E /* NSData_AMDigest.m in Sources */,
+				90FA7F680E74020F0048EE2A /* MyDocument0.2.xcmappingmodel in Sources */,
+				90FA7FD30E74FAB50048EE2A /* PKTrackCategory.m in Sources */,
+				90FA7FD70E74FAF00048EE2A /* MyDocument0.3.xcmappingmodel in Sources */,
+				90A2CBB90EA2565800E5A3F6 /* PKTrackListViewController.m in Sources */,
+				90961FC00EA9E33800C4D896 /* PKKMLExport.m in Sources */,
+				901AF8160EABA27D001B4697 /* PKToolbarDelegate.m in Sources */,
+				901AF8270EABB578001B4697 /* PKTrackListTableView.m in Sources */,
+				909F71A20EAE415E00F62730 /* PKLibraryOutlineView.m in Sources */,
+				904DFDB90EAFB5DB00DE8693 /* MyDocument.xcdatamodel in Sources */,
+				904DFDCD0EAFB86C00DE8693 /* MyDocument0.4.xcmappingmodel in Sources */,
+				906320100EB35F58004102B0 /* PKSmartLibraryItem.m in Sources */,
+				906320110EB35F58004102B0 /* PKStyleMO.m in Sources */,
+				906320230EB36A14004102B0 /* NSColorHexValue.m in Sources */,
+				906320290EB485A0004102B0 /* MyDocument0.5.xcmappingmodel in Sources */,
+				906320780EB488EE004102B0 /* PKPreferenceController.m in Sources */,
+				906320DF0EB493DC004102B0 /* PKGeneralPrefPanel.m in Sources */,
+				906320E20EB493FC004102B0 /* PKStylesPrefPanel.m in Sources */,
+				9063218A0EB4B339004102B0 /* PKCategoriesPrefPanel.m in Sources */,
+				908BA7180EB7A5520002CABD /* MyDocument0.6.xcmappingmodel in Sources */,
+				90A9D06D0EBDC68400A635F8 /* MyDocument0.8.xcmappingmodel in Sources */,
+				903C02630ED7181F00426C86 /* PKImportGPSFilesSheetController.m in Sources */,
+				90D472170ED99B2E00EC86C0 /* PKTracksWaypointController.m in Sources */,
+				90DCC3950ED9AF5A0052FBCC /* PKTrackWaypointOutlineView.m in Sources */,
+				90D8D1C20F08E3C700CE3223 /* PKKMLExport-pertrack.m in Sources */,
+				90E6233E0F0E725C0074D5B9 /* PKTrackGraphViewController.m in Sources */,
+				90EAB64C0F10F8DA00AAD3B6 /* MyDocument0.9.xcmappingmodel in Sources */,
+				90DC61A10F4206B7000C47E5 /* PKGraphView.m in Sources */,
+				9038AC400F76A44900589315 /* MyDocument1.0.xcmappingmodel in Sources */,
+				9068834C0F8D401900FA9282 /* CRManagedObject.m in Sources */,
+				9068834D0F8D401900FA9282 /* Group.m in Sources */,
+				9068834E0F8D401A00FA9282 /* ManualGroup.m in Sources */,
+				9068834F0F8D401B00FA9282 /* SmartGroup.m in Sources */,
+				9032E7CC0F937A99007610B7 /* MyDocument1.1.xcmappingmodel in Sources */,
+				90D3768E0F93BDC90098006D /* MyDocument1.2.xcmappingmodel in Sources */,
+				9099B7060F99DF84007E1314 /* PKArrayCountValueTransformer.m in Sources */,
+				9099B7A40F9B1C54007E1314 /* PKAEOperationTooltipValueTransformer.m in Sources */,
+				9099B7D00F9B2294007E1314 /* PKNotArrayCountValueTransformer.m in Sources */,
+				9099B8240F9B3275007E1314 /* PKCountCell.m in Sources */,
+				9099B92D0F9C6F4E007E1314 /* MainWindowDelegate.m in Sources */,
+				9099B9750F9C8164007E1314 /* PKDetailView.m in Sources */,
+				90F2D0200F9CFE32005424C0 /* MyDocument1.3.xcmappingmodel in Sources */,
+				90D79F750FB09DB30027E8EA /* Cache.xcdatamodel in Sources */,
+				90D79F770FB09DB30027E8EA /* FMDatabaseAdditions.m in Sources */,
+				90D79F790FB09DB30027E8EA /* FMResultSet.m in Sources */,
+				90D79F820FB09DB30027E8EA /* RMAbstractMercatorWebSource.m in Sources */,
+				90D79F830FB09DB30027E8EA /* RMCachedTileSource.m in Sources */,
+				90D79F840FB09DB30027E8EA /* RMCloudMadeMapSource.m in Sources */,
+				90D79F850FB09DB30027E8EA /* RMConfiguration.m in Sources */,
+				90D79F860FB09DB30027E8EA /* RMCoreAnimationRenderer.m in Sources */,
+				90D79F870FB09DB30027E8EA /* RMDatabaseCache.m in Sources */,
+				90D79F880FB09DB30027E8EA /* RMFileTileImage.m in Sources */,
+				90D79F890FB09DB30027E8EA /* RMFoundation.c in Sources */,
+				90D79F8A0FB09DB30027E8EA /* RMFractalTileProjection.m in Sources */,
+				90D79F8B0FB09DB30027E8EA /* RMGeoHash.m in Sources */,
+				90D79F8C0FB09DB30027E8EA /* RMLayerSet.m in Sources */,
+				90D79F8D0FB09DB30027E8EA /* RMMapContents.m in Sources */,
+				90D79F8E0FB09DB30027E8EA /* RMMapLayer.m in Sources */,
+				90D79F8F0FB09DB30027E8EA /* RMMapRenderer.m in Sources */,
+				90D79F930FB09DB30027E8EA /* RMMemoryCache.m in Sources */,
+				90D79F940FB09DB30027E8EA /* RMMercatorToScreenProjection.m in Sources */,
+				90D79F950FB09DB30027E8EA /* RMOpenAerialMapSource.m in Sources */,
+				90D79F960FB09DB30027E8EA /* RMOpenStreetMapSource.m in Sources */,
+				90D79F970FB09DB30027E8EA /* RMPath.m in Sources */,
+				90D79F980FB09DB30027E8EA /* RMPixel.c in Sources */,
+				90D79F990FB09DB30027E8EA /* RMProjection.m in Sources */,
+				90D79F9A0FB09DB30027E8EA /* RMTile.c in Sources */,
+				90D79F9B0FB09DB30027E8EA /* RMTileCache.m in Sources */,
+				90D79F9C0FB09DB30027E8EA /* RMTileCacheDAO.m in Sources */,
+				90D79F9E0FB09DB30027E8EA /* RMTileImage.m in Sources */,
+				90D79F9F0FB09DB30027E8EA /* RMTileImageSet.m in Sources */,
+				90D79FA00FB09DB30027E8EA /* RMTileLoader.m in Sources */,
+				90D79FA10FB09DB30027E8EA /* RMTileProxy.m in Sources */,
+				90D79FA20FB09DB30027E8EA /* RMTransform.m in Sources */,
+				90D79FA30FB09DB30027E8EA /* RMVirtualEarthSource.m in Sources */,
+				90D79FA40FB09DB30027E8EA /* RMWebTileImage.m in Sources */,
+				90D79FA50FB09DB30027E8EA /* RMYahooMapSource.m in Sources */,
+				90D7A0EC0FB0C2340027E8EA /* RMMapView.m in Sources */,
+				90D7A1250FB0C37D0027E8EA /* main.m in Sources */,
+				90D7A1300FB0C38E0027E8EA /* pathKeeper_AppDelegate.m in Sources */,
+				90D7A15C0FB0C5620027E8EA /* PSUtil.m in Sources */,
+				90FD1CD50FB1D5620091C0FB /* PKTrackMO+RM.m in Sources */,
+				9066A7C10FE3C41E00BC3421 /* NSDateDecimalValue.m in Sources */,
+				90E2D2560FFF72400054FA2E /* MyDocument1.4.xcdatamodel in Sources */,
+				90E2D25B0FFF72870054FA2E /* MyDocument1.4.xcmappingmodel in Sources */,
+				90DEAA4610234FDA000A5CC1 /* CPDateFormatter.m in Sources */,
+				9098DA5F10775B720011F2AF /* GroupKMLExport.m in Sources */,
+				90FB4A0C10A605EB003BF7F6 /* PKExportPluginManager.m in Sources */,
+				90FB4AAF10A6BEF7003BF7F6 /* PKPluginsPrefPanel.m in Sources */,
+				90FB4B9810A729AE003BF7F6 /* PKExportPluginOperation.m in Sources */,
+				906A6E0D10B8353900013053 /* PKDateToNumberTransformer.m in Sources */,
+				90B2EC8E10CBCCAA00C18A2A /* PKGraphInteractionLayer.m in Sources */,
+				905A780210EF89210085673B /* FMDatabase.m in Sources */,
+				905A780710EF89670085673B /* JDKTempDirectory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905A787910EF8FC80085673B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905A788110EF8FE60085673B /* DMSExport.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90FB49E210A60220003BF7F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90FB49EE10A60253003BF7F6 /* PKTestPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90FB4B2110A6C520003BF7F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		905A788510EF900E0085673B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90FB4B2310A6C520003BF7F6 /* PKPlugins */;
+			targetProxy = 905A788410EF900E0085673B /* PBXContainerItemProxy */;
+		};
+		90FB4B2B10A6C549003BF7F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90FB4B2310A6C520003BF7F6 /* PKPlugins */;
+			targetProxy = 90FB4B2A10A6C549003BF7F6 /* PBXContainerItemProxy */;
+		};
+		90FB4B2D10A6C54D003BF7F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90FB4B2310A6C520003BF7F6 /* PKPlugins */;
+			targetProxy = 90FB4B2C10A6C54D003BF7F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		902E80850E3C5E01004493B5 /* pathKeeper.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				902E80860E3C5E01004493B5 /* English */,
+			);
+			name = pathKeeper.xib;
+			sourceTree = "<group>";
+		};
+		902E819B0E3C7306004493B5 /* mainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				902E819C0E3C7306004493B5 /* English */,
+			);
+			name = mainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26FC0AAA0875C8B900E6366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../CorePlot/framework/build/Debug\"";
+				GCC_VERSION = 4.0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-Winvalid-pch";
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Debug;
+		};
+		26FC0AAB0875C8B900E6366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				ENABLE_OPENMP_SUPPORT = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../core-plot-clean3/framework/build/Debug\"";
+				GCC_VERSION = 4.0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-Winvalid-pch";
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Release;
+		};
+		902E80540E3C5C0D004493B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Handy Cocoa Classes/bwtoolkit/build/Release\"",
+					"\"$(SRCROOT)/../narrative/build/Debug\"",
+					"\"$(SRCROOT)/../CorePlot/framework/build/Debug\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PathKeeper_Prefix.pch;
+				HEADER_SEARCH_PATHS = ../Proj4;
+				INFOPLIST_FILE = "PathKeeper-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Proj4/build/Debug\"",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PathKeeper;
+			};
+			name = Debug;
+		};
+		902E80550E3C5C0D004493B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Handy Cocoa Classes/bwtoolkit/build/Release\"",
+					"\"$(SRCROOT)/../narrative/build/Debug\"",
+					"\"$(SRCROOT)/../CorePlot/framework/build/Debug\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PathKeeper_Prefix.pch;
+				HEADER_SEARCH_PATHS = ../Proj4;
+				INFOPLIST_FILE = "PathKeeper-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Proj4/build/Debug\"",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PathKeeper;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		905A787E10EF8FC90085673B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "DMSExport-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = DMSExport;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		905A787F10EF8FC90085673B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "DMSExport-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = DMSExport;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		90FB49E710A60224003BF7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PKTestPlugin-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PKTestPlugin;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		90FB49E810A60224003BF7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PKTestPlugin-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PKTestPlugin;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		90FB4B2610A6C522003BF7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PKPlugins-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PKPlugins;
+			};
+			name = Debug;
+		};
+		90FB4B2710A6C522003BF7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PKPlugins-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PKPlugins;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26FC0AA90875C8B900E6366F /* Build configuration list for PBXProject "PathKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC0AAA0875C8B900E6366F /* Debug */,
+				26FC0AAB0875C8B900E6366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		902E80560E3C5C0D004493B5 /* Build configuration list for PBXNativeTarget "PathKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				902E80540E3C5C0D004493B5 /* Debug */,
+				902E80550E3C5C0D004493B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		905A788010EF8FCA0085673B /* Build configuration list for PBXNativeTarget "DMSExport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				905A787E10EF8FC90085673B /* Debug */,
+				905A787F10EF8FC90085673B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90FB49E910A60224003BF7F6 /* Build configuration list for PBXNativeTarget "PKTestPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90FB49E710A60224003BF7F6 /* Debug */,
+				90FB49E810A60224003BF7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90FB4B2810A6C522003BF7F6 /* Build configuration list for PBXNativeTarget "PKPlugins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90FB4B2610A6C522003BF7F6 /* Debug */,
+				90FB4B2710A6C522003BF7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		90C301C20E40F30600B54B2D /* MyDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				90E2D2550FFF72400054FA2E /* MyDocument1.4.xcdatamodel */,
+				775BDEF0067A8BF0009058FE /* MyDocument.xcdatamodel */,
+				90C301C50E40F30600B54B2D /* MyDocument0.1.xcdatamodel */,
+				90FA7F0F0E73E9970048EE2A /* MyDocument0.2.xcdatamodel */,
+				90FA7FCE0E74FA710048EE2A /* MyDocument0.3.xcdatamodel */,
+				904DFDC60EAFB84100DE8693 /* MyDocument0.4.xcdatamodel */,
+				906320180EB361BE004102B0 /* MyDocument0.5.xcdatamodel */,
+				906322570EB4F305004102B0 /* MyDocument0.6.xcdatamodel */,
+				908BA7120EB7A4A70002CABD /* MyDocument0.7.xcdatamodel */,
+				90A9D0690EBDC4FC00A635F8 /* MyDocument0.8.xcdatamodel */,
+				90EAB6350F10F79400AAD3B6 /* MyDocument0.9.xcdatamodel */,
+				90E7D6960F76A2C300A7EB23 /* MyDocument1.0.xcdatamodel */,
+				9032E7A90F93792E007610B7 /* MyDocument1.1.xcdatamodel */,
+				90D3768A0F93BD620098006D /* MyDocument1.2.xcdatamodel */,
+				90F2D0000F9CF9D2005424C0 /* MyDocument1.3.xcdatamodel */,
+			);
+			currentVersion = 775BDEF0067A8BF0009058FE /* MyDocument.xcdatamodel */;
+			path = MyDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

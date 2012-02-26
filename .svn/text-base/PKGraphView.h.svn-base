@@ -1,0 +1,27 @@
+//
+//  PKGraphView.h
+//  PathKeeper
+//
+//  Created by Dirkjan Krijnders on 2/10/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+#import <CorePlot/CorePlot.h>
+
+
+@interface PKGraphView : CPLayerHostingView {
+	CPXYGraph *graph;
+	CPScatterPlot *linePlot;
+}
+
+@property (nonatomic, readwrite, retain) CPScatterPlot* linePlot;
+@property (nonatomic, readwrite, retain) CPXYGraph* graph;
+
+- (void) setStartTime:(NSDate*)startTime andStopTime:(NSDate*)stopTime;
+- (void) setYMax:(float)max;
+
+- (void) addLinePlotForTrack:(NSArrayController*)track;
+- (void) addLinePlotForTrack:(NSArrayController*)track withColor:(CPColor*)lineColor;
+
+@end

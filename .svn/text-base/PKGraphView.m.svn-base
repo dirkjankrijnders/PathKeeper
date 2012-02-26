@@ -1,0 +1,162 @@
+//
+//  PKGraphView.m
+//  PathKeeper
+//
+//  Created by Dirkjan Krijnders on 2/10/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import "PKGraphView.h"
+#import "CPDateFormatter.h"
+#import "PKDateToNumberTransformer.h"
+#import "PKGraphInteractionLayer.h"
+
+
+@implementation PKGraphView
+
+@synthesize linePlot, graph;
+
+
+- (id)initWithFrame:(NSRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+
+		// Create graph
+		graph = [[CPXYGraph alloc] initWithFrame:NSRectToCGRect(frame) xScaleType:CPScaleTypeLinear yScaleType:CPScaleTypeLinear];
+		graph.frame = NSRectToCGRect(frame);
+
+		
+		// Plot area
+		CPGradient *gradient = [CPGradient gradientWithBeginningColor:[CPColor colorWithGenericGray:0.6] endingColor:[CPColor colorWithGenericGray:0.9]];
+		gradient.angle = 90.0;
+		graph.plotArea.fill = [CPFill fillWithGradient:gradient]; 
+
+		[self setLayer:graph];
+		[self setWantsLayer:YES];
+
+		[graph release];
+		
+		graph.paddingTop = 20.;
+		graph.paddingLeft = 60.0;
+		graph.paddingRight = 20.0;
+		graph.paddingBottom = 60.0;
+
+		// Setup plot space
+		CPXYPlotSpace *plotSpace = (CPXYPlotSpace *)graph.defaultPlotSpace;
+		plotSpace.xRange = [CPPlotRange plotRangeWithLocation:CPDecimalFromFloat(0.0f) length:CPDecimalFromFloat(100.0f)];
+		plotSpace.yRange = [CPPlotRange plotRangeWithLocation:CPDecimalFromFloat(0.0f) length:CPDecimalFromFloat(100.0f)];
+		
+		// Axes
+		CPXYAxisSet *axisSet = (CPXYAxisSet *)graph.axisSet;
+		
+		CPLineStyle *majorLineStyle = [CPLineStyle lineStyle];
+		majorLineStyle.lineCap = kCGLineCapRound;
+		majorLineStyle.lineColor = [CPColor blackColor];
+		majorLineStyle.lineWidth = 2.0f;
+		
+		CPLineStyle *minorLineStyle = [CPLineStyle lineStyle];
+		minorLineStyle.lineColor = [CPColor blackColor];
+		minorLineStyle.lineWidth = 2.0f;
+		
+		axisSet.xAxis.majorIntervalLength = [[NSDecimalNumber numberWithFloat:500.f] decimalValue];
+		axisSet.xAxis.constantCoordinateValue = [[NSDecimalNumber decimalNumberWithString:@"0.0"] decimalValue];
+		axisSet.xAxis.minorTicksPerInterval = 0;
+		axisSet.xAxis.majorTickLineStyle = majorLineStyle;
+		axisSet.xAxis.minorTickLineStyle = minorLineStyle;
+		axisSet.xAxis.axisLineStyle = majorLineStyle;
+		axisSet.xAxis.minorTickLength = 7.0f;
+		[axisSet.xAxis setTitle:@"Date / Time"];
+		axisSet.xAxis.titleOffset = 30.0f;
+//		axisSet.xAxis.titleLocation = CPDecimalFromString(@"1197379500");
+		axisSet.xAxis.labelingPolicy = CPAxisLabelingPolicyAutomatic;
+		CPDateFormatter* dateFormatter = [[[CPDateFormatter alloc] init] autorelease];;
+		axisSet.xAxis.labelFormatter = dateFormatter;
+		[dateFormatter.dateFormatter setDateStyle:NSDateFormatterNoStyle];
+		[dateFormatter.dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
+		axisSet.yAxis.majorIntervalLength = [[NSDecimalNumber numberWithFloat:10.0] decimalValue];
+		axisSet.yAxis.minorTicksPerInterval = 5;
+		axisSet.yAxis.labelingPolicy = CPAxisLabelingPolicyAutomatic;
+		axisSet.yAxis.constantCoordinateValue = [[NSDecimalNumber decimalNumberWithString:@"0.0"] decimalValue];
+		axisSet.yAxis.majorTickLineStyle = majorLineStyle;
+		axisSet.yAxis.minorTickLineStyle = minorLineStyle;
+		axisSet.yAxis.axisLineStyle = majorLineStyle;
+		axisSet.yAxis.minorTickLength = 7.0f;
+		[axisSet.yAxis setTitle:@"Speed [km/h]"];
+		axisSet.yAxis.titleOffset = 40.0f;
+		
+		plotSpace.allowsUserInteraction = YES;
+		[self setHostedLayer:[PKGraphInteractionLayer layer]];
+		[(PKGraphInteractionLayer*)[self hostedLayer] setPlotSpace:plotSpace];
+    }
+    return self;
+}
+
+- (void) setFrame:(NSRect)rect
+{
+	[super setFrame:rect];
+	[graph setFrame:NSRectToCGRect(rect)];
+}
+
+- (void)drawRect:(NSRect)rect {
+    // Drawing code here.
+}
+
+- (void) setStartTime:(NSDate*)startTime andStopTime:(NSDate*)stopTime
+{
+	CPXYAxisSet *axisSet = (CPXYAxisSet *)graph.axisSet;
+	CPXYPlotSpace *plotSpace = (CPXYPlotSpace *)graph.defaultPlotSpace;
+	axisSet.yAxis.constantCoordinateValue = [[NSDecimalNumber decimalNumberWithDecimal:CPDecimalFromFloat([startTime timeIntervalSince1970])] decimalValue];
+	axisSet.xAxis.labelingOrigin = [[NSDecimalNumber decimalNumberWithDecimal:CPDecimalFromFloat([startTime timeIntervalSince1970])] decimalValue];
+	plotSpace.xRange = [CPPlotRange plotRangeWithLocation:CPDecimalFromFloat([startTime timeIntervalSince1970]) length:CPDecimalFromFloat([stopTime timeIntervalSinceDate:startTime])];
+	NSLog(@"Set xRange to %@", plotSpace.xRange);
+	NSDecimal titleLocation, temp;
+	titleLocation = CPDecimalFromFloat(0.5f);
+	temp = plotSpace.xRange.length;
+	NSDecimalMultiply(&titleLocation, &titleLocation, &temp , NSRoundPlain);
+	temp = plotSpace.xRange.location;
+	NSDecimalAdd(&titleLocation, &temp, &titleLocation, NSRoundPlain);
+	axisSet.xAxis.titleLocation = titleLocation;
+
+	[graph setNeedsDisplay];
+	
+//	[self setHostedLayer:[CPLayer layer]];
+}
+
+- (void) setYMax:(float)max
+{
+	CPXYPlotSpace *plotSpace = (CPXYPlotSpace *)graph.defaultPlotSpace;
+	plotSpace.yRange = [CPPlotRange plotRangeWithLocation:CPDecimalFromFloat(0.0f) length:CPDecimalFromFloat(max)];
+	NSLog(@"Set yRange to %@", plotSpace.yRange);
+	NSDecimal titleLocation, temp;
+	titleLocation = CPDecimalFromFloat(0.5f);
+	temp = plotSpace.yRange.length;
+	NSDecimalMultiply(&titleLocation, &titleLocation, &temp , NSRoundPlain);
+	CPXYAxisSet *axisSet = (CPXYAxisSet*) graph.axisSet;
+	axisSet.yAxis.titleLocation = titleLocation;
+
+	[graph setNeedsDisplay];
+	
+}
+
+- (void) addLinePlotForTrack:(NSArrayController*)track {
+	[self addLinePlotForTrack:track withColor:[[CPColor blueColor] colorWithAlphaComponent:1]];
+};
+
+- (void) addLinePlotForTrack:(NSArrayController*)track withColor:(CPColor*)lineColor {
+	self.linePlot = [[[CPScatterPlot alloc] init] autorelease];
+	linePlot.identifier = @"test-plot";
+	linePlot.dataLineStyle.lineWidth = 2.f;
+	linePlot.dataLineStyle.lineCap = kCGLineCapRound;
+	linePlot.dataLineStyle.lineJoin = kCGLineJoinRound;
+	linePlot.dataLineStyle.lineColor = [[CPColor blueColor] colorWithAlphaComponent:1]; //[[CPColor redColor] colorWithAlphaComponent:0.7]lineColor;
+	[graph addPlot:linePlot];
+	[linePlot bind:CPScatterPlotBindingXValues toObject:track withKeyPath:@"arrangedObjects.date" options:[NSDictionary dictionaryWithObject:@"PKDateToNumberTransformer" forKey:@"NSValueTransformerNameBindingOption"]];
+	[linePlot bind:CPScatterPlotBindingYValues toObject:track withKeyPath:@"arrangedObjects.speed" options:nil];
+}
+
+- (void) removeLinePlotForTrack:(NSArrayController*)track
+{
+	[graph removePlotWithIdentifier:track];
+}
+
+@end

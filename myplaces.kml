@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+	<name>default_myplaces_en.kml</name>
+	<open>1</open>
+	<Style id="sn_ylw-pushpin_copy4">
+		<LineStyle>
+			<color>64eeee17</color>
+			<width>6</width>
+		</LineStyle>
+	</Style>
+	<Style id="default_myplaces_style">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="sn_ylw-pushpin_copy2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin_copy3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_ylw-pushpin_copy4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="sn_ylw-pushpin_copy10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin_copy11</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_ylw-pushpin_copy12</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin_copy3">
+		<LineStyle>
+			<color>64eeee17</color>
+			<width>6</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin_copy5">
+		<LineStyle>
+			<color>64eeee17</color>
+			<width>6</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin_copy0">
+		<LineStyle>
+			<color>64eeee17</color>
+			<width>6</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<LineStyle>
+			<color>64eeee17</color>
+			<width>6</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin_copy11">
+		<LineStyle>
+			<color>64eeee17</color>
+			<width>6</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin_copy12">
+		<LineStyle>
+			<color>64eeee17</color>
+			<width>6</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>My Places</name>
+		<open>1</open>
+		<Style>
+			<ListStyle>
+				<listItemType>check</listItemType>
+				<ItemIcon>
+					<state>open</state>
+					<href>/Applications/Google Earth.app/Contents/Resources/mysavedplaces_open.png</href>
+				</ItemIcon>
+				<ItemIcon>
+					<state>closed</state>
+					<href>/Applications/Google Earth.app/Contents/Resources/mysavedplaces_closed.png</href>
+				</ItemIcon>
+				<bgColor>00ffffff</bgColor>
+			</ListStyle>
+		</Style>
+		<Document>
+			<name>PathKeeper Library</name>
+
+
+		</Document>
+	</Folder>
+</Document>
+</kml>
