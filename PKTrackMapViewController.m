@@ -21,7 +21,7 @@
 - (void) setRepresentedObject:(id)rO
 {
 	[super setRepresentedObject:rO];
-	NSArray* points = [[rO valueForKey:@"sortedPoints"] objectAtIndex:0];
+	NSArray* points = [[rO objectAtIndex:0] valueForKey:@"sortedPoints"];// objectAtIndex:0];
 	NSNumber* longitude = [(PKWaypointMO*)[points objectAtIndex:0] longitude];
 	NSNumber* latitude = [(PKWaypointMO*)[points objectAtIndex:0] latitude];
 	CLLocationCoordinate2D point;

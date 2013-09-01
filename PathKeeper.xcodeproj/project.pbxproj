@@ -28,6 +28,7 @@
 		902E81E70E3C74DD004493B5 /* PKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E81E60E3C74DD004493B5 /* PKDetailViewController.m */; };
 		902E82070E3C7548004493B5 /* detailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 902E82060E3C7548004493B5 /* detailView.xib */; };
 		9032E7CC0F937A99007610B7 /* MyDocument1.1.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9032E7CB0F937A99007610B7 /* MyDocument1.1.xcmappingmodel */; };
+		9034F39017D3CF0C00339D1F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9034F38F17D3CF0C00339D1F /* libsqlite3.dylib */; };
 		9035A37D0E6805700078090E /* NSData_AMDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9035A37C0E6805700078090E /* NSData_AMDigest.m */; };
 		9038AC400F76A44900589315 /* MyDocument1.0.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9038AC3F0F76A44900589315 /* MyDocument1.0.xcmappingmodel */; };
 		903B408D17D386B000BB6054 /* PROJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903B408C17D386B000BB6054 /* PROJ.framework */; };
@@ -244,6 +245,7 @@
 		902E82060E3C7548004493B5 /* detailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = detailView.xib; sourceTree = "<group>"; };
 		9032E7A90F93792E007610B7 /* MyDocument1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument1.1.xcdatamodel; sourceTree = "<group>"; };
 		9032E7CB0F937A99007610B7 /* MyDocument1.1.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument1.1.xcmappingmodel; sourceTree = "<group>"; };
+		9034F38F17D3CF0C00339D1F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libsqlite3.dylib; sourceTree = DEVELOPER_DIR; };
 		9035A37B0E6805700078090E /* NSData_AMDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSData_AMDigest.h; sourceTree = "<group>"; };
 		9035A37C0E6805700078090E /* NSData_AMDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSData_AMDigest.m; sourceTree = "<group>"; };
 		903829510E2388C90085FCAC /* PKTrackMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTrackMO.h; sourceTree = "<group>"; };
@@ -429,6 +431,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9034F39017D3CF0C00339D1F /* libsqlite3.dylib in Frameworks */,
 				908A71C017D38F5D0074D67D /* QuartzCore.framework in Frameworks */,
 				903B408D17D386B000BB6054 /* PROJ.framework in Frameworks */,
 				906ABD0514F8144500F26E5B /* libMapView-osx.a in Frameworks */,
@@ -493,6 +496,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* PathKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				9034F38F17D3CF0C00339D1F /* libsqlite3.dylib */,
 				906ABCEA14F8106D00F26E5B /* CorePlot.xcodeproj */,
 				906ABCF714F813BC00F26E5B /* MapView-osx.xcodeproj */,
 				90FB49DA10A6012F003BF7F6 /* Plugin Framework */,

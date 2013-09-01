@@ -11,11 +11,13 @@
 #import "AEConverter.h"
 #import "PKTrackMapViewController.h"
 #import "pathKeeper_AppDelegate.h"
+#import "RMMapView.h"
 
 @implementation trackMapView
 
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
+    [RMMapView class]; // Here to keep the linker at bay;
     if (self) {
         // Initialization code here.
 //		[[[NSApp delegate] trackController] addObserver:self forKeyPath:@"selectedObjects" options:NSKeyValueObservingOptionNew context:NULL];

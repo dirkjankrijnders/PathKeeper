@@ -56,7 +56,8 @@
 
 - (NSArray*) sortedPoints
 {
-	return [[NSArray arrayWithArray:[self valueForKey:@"points"]] sortedArrayUsingDescriptors:[self sortDescriptors]];
+    return [[self points] sortedArrayUsingDescriptors:[self sortDescriptors]];
+//	return [[NSArray arrayWithArray:[self valueForKey:@"points"]] sortedArrayUsingDescriptors:[self sortDescriptors]];
 };
 
 - (void) addDistance:(double)d {
