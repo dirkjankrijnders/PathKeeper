@@ -27,7 +27,7 @@
 	
 	if ([value respondsToSelector: @selector(count)]) 
 	{
-		ret =  [NSString stringWithFormat:@"%i Operations running:\n", [value count]];
+		ret =  [NSString stringWithFormat:@"%li Operations running:\n", (unsigned long)[value count]];
 		for (AEOperation* op in value)
 			ret = [ret stringByAppendingFormat:@"%@\n", [op title]];
 	}

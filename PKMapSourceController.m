@@ -122,7 +122,7 @@
 //	NSPoint LL = [self LLAtLevel:level forX:col andY:row];
 	NSPoint LL2 = LL; //[self LLAtLevel:level	forX:col+1 andY:row+1];
 	NSImage* image = [[NSImage alloc] initWithSize:NSMakeSize([self pixelsPerTile], [self pixelsPerTile])];
-	NSString* text = [NSString stringWithFormat:@" Tile @ (%u, %u)\n=> (%f, %f)x(%f, %f)\nzl: %i", col, row, LL.x, LL.y, LL2.x, LL2.y, level];
+	NSString* text = [NSString stringWithFormat:@" Tile @ (%lu, %lu)\n=> (%f, %f)x(%f, %f)\nzl: %li", (long)col, (long)row, LL.x, LL.y, LL2.x, LL2.y, (long)level];
 	[image lockFocus];
 	[text drawAtPoint:NSMakePoint(10.0, 200.0) withAttributes:nil];
 	[image unlockFocus];

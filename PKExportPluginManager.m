@@ -25,11 +25,11 @@
 - (id)init
 {
 	if (!(self = [super init])) return nil;
-	
+	NSError *error;
 	//Find the plugins
 	NSFileManager *fileManager = [NSFileManager defaultManager];
-	NSArray *plugins = [fileManager directoryContentsAtPath:[self applicationSupportFolder]];
-	
+
+	NSArray *plugins = [fileManager contentsOfDirectoryAtPath:[self applicationSupportFolder] error:&error];
 	if (![plugins count]) {
 		NSLog(@"%@:%s No plugins found in %@", [self class], _cmd, [self applicationSupportFolder]);
 		return self;

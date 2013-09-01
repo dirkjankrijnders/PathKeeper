@@ -28,7 +28,7 @@
 
 - (IBAction) switchPreferenceView:(id)sender
 {
-	NSLog(@"Preference switch view: %i", [sender tag]);
+	NSLog(@"Preference switch view: %li", (long)[sender tag]);
 	[self removeViewController:[self currentViewController]];
 	// remove current view from hierarchy
 	[[[self currentViewController] view] removeFromSuperview];

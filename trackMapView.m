@@ -10,6 +10,7 @@
 #import "PKTrackMO.h"
 #import "AEConverter.h"
 #import "PKTrackMapViewController.h"
+#import "pathKeeper_AppDelegate.h"
 
 @implementation trackMapView
 
@@ -132,7 +133,7 @@
 
 - (void) dealloc
 {
-	[[[NSApp delegate] trackController] removeObserver:self forKeyPath:@"selectedObjects"];
+	[[(pathKeeper_AppDelegate*)[NSApp delegate] trackController] removeObserver:self forKeyPath:@"selectedObjects"];
 	[super dealloc];
 };
 
