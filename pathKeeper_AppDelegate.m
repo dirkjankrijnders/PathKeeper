@@ -519,18 +519,19 @@
     NSOpenPanel *oPanel = [NSOpenPanel openPanel];
 	
     [oPanel setAllowsMultipleSelection:YES];
-    result = [oPanel runModalForDirectory:NSHomeDirectory()
-									 file:nil types:fileTypes];
+    [oPanel setDirectoryURL:[NSURL URLWithString:NSHomeDirectory()]];
+    [oPanel setAllowedFileTypes:fileTypes];
+    result = [oPanel runModal]; //ForDirectory:NSHomeDirectory() file:nil types:fileTypes];
 	[[NSNotificationCenter defaultCenter] addObserver:mMainWindowController
 											 selector:@selector(updateManagedObjectContext:)
 												 name:NSManagedObjectContextDidSaveNotification object:nil];
     if (result == NSOKButton) {
-        NSArray *filesToOpen = [oPanel filenames];
-        for (NSString *aFile in filesToOpen) {
+        NSArray *filesToOpen = [oPanel URLs];
+        for (NSURL *aFile in filesToOpen) {
 			
 			NSLog(@"Document MO: %@", [self managedObjectContext]);
 			NSManagedObjectContext* MOContext = [self managedObjectContext];
-			GPXImportOperation* GPXImporter = [[GPXImportOperation alloc] initWithURL:[NSURL fileURLWithPath:aFile] andMOContext:MOContext];
+			GPXImportOperation* GPXImporter = [[GPXImportOperation alloc] initWithURL:aFile andMOContext:MOContext];
 			[[self opController] addOperation:GPXImporter];
 			[GPXImporter autorelease];
 		}
