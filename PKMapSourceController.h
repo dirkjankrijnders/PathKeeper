@@ -8,9 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "PSTileManager.h";
-#import "PSTileMO.h";
-#import "AEConverter.h";
+#import "PSTileManager.h"
+#import "PSTileMO.h"
+#import "AEConverter.h"
 
 @interface PKMapSourceController : NSObject {
 	PSTileManager*	tileManager;

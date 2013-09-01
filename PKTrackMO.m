@@ -252,7 +252,7 @@
 
 - (NSString*) KMLStyle
 {
-	NSString * style = [NSString stringWithString:@"#lineStyle"];
+	NSString * style = @"#lineStyle";
 	for (PKTrackCategory* cat in [self categories])
 	{
 		if ([cat style])

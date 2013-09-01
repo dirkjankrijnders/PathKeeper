@@ -70,7 +70,7 @@ completionsForSubstring:(NSString *)substring
 - (NSArray *)tokenField:(NSTokenField *)tokenField shouldAddObjects:(NSArray *)tokens atIndex:(NSUInteger)index
 {
 //	[(PKTrackMO*)[self representedObject] addCategories:[NSSet setWithArray:tokens]];
-	NSLog(@"shouldAddObjects: %@ atIndex: %i", tokens, index);
+	NSLog(@"shouldAddObjects: %@ atIndex: %li", tokens, (unsigned long)index);
 	return tokens;
 };
 

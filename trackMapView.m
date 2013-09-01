@@ -101,7 +101,7 @@
 	NSLog(@"Scale length: %@, becomes: %f, unit: %@", lengthInM, niceRoundNumber.value * MperPixel, [AEConverter shortUnitForDistance:niceRoundNumber]);
 	[scaleMeasurePath setLineWidth:0.001];
 	NSLog(@"%@", NSStringFromRect([scaleMeasurePath bounds]));
-	NSFont* font1= [NSFont fontWithName:@"Helvetica" size:9.0];
+//	NSFont* font1= [NSFont fontWithName:@"Helvetica" size:9.0];
 	NSString* label = [NSString stringWithFormat:@"%f %@",niceRoundNumber.value, [AEConverter shortUnitForDistance:niceRoundNumber]];
 	NSLog(@"%@", label);
 	return scaleMeasurePath;

@@ -254,7 +254,7 @@
 		903829B60E2392CA0085FCAC /* GPXImportOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXImportOperation.m; sourceTree = "<group>"; };
 		903829B70E2392CA0085FCAC /* ImportGPXIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImportGPXIcon.png; sourceTree = "<group>"; };
 		9038AC3F0F76A44900589315 /* MyDocument1.0.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument1.0.xcmappingmodel; sourceTree = "<group>"; };
-		903B408C17D386B000BB6054 /* PROJ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PROJ.framework; path = ../../../../../Library/Frameworks/PROJ.framework; sourceTree = "<group>"; };
+		903B408C17D386B000BB6054 /* PROJ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PROJ.framework; path = /Library/Frameworks/PROJ.framework; sourceTree = "<absolute>"; };
 		903C025C0ED7150000426C86 /* importGPSFiles.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = importGPSFiles.xib; sourceTree = "<group>"; };
 		903C02610ED7181F00426C86 /* PKImportGPSFilesSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKImportGPSFilesSheetController.h; sourceTree = "<group>"; };
 		903C02620ED7181F00426C86 /* PKImportGPSFilesSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKImportGPSFilesSheetController.m; sourceTree = "<group>"; };
@@ -495,11 +495,8 @@
 			children = (
 				906ABCEA14F8106D00F26E5B /* CorePlot.xcodeproj */,
 				906ABCF714F813BC00F26E5B /* MapView-osx.xcodeproj */,
-				908A71BF17D38F5D0074D67D /* QuartzCore.framework */,
-				903B408C17D386B000BB6054 /* PROJ.framework */,
 				90FB49DA10A6012F003BF7F6 /* Plugin Framework */,
 				90E2D25A0FFF72870054FA2E /* MyDocument1.4.xcmappingmodel */,
-				904CC8F00FDAC5B40007D537 /* CorePlot.framework */,
 				90D79FE60FB0A4B90027E8EA /* PathKeeper_Prefix.pch */,
 				90D472A10ED9A8E300EC86C0 /* To change in model */,
 				E1B74B1A0667B4A90069E3BA /* Models and Mappings */,
@@ -590,6 +587,9 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				908A71BF17D38F5D0074D67D /* QuartzCore.framework */,
+				903B408C17D386B000BB6054 /* PROJ.framework */,
+				904CC8F00FDAC5B40007D537 /* CorePlot.framework */,
 				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);

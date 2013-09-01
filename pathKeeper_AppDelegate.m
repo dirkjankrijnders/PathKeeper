@@ -93,7 +93,8 @@
     fileManager = [NSFileManager defaultManager];
     applicationSupportFolder = [self applicationSupportFolder];
     if ( ![fileManager fileExistsAtPath:applicationSupportFolder isDirectory:NULL] ) {
-        [fileManager createDirectoryAtPath:applicationSupportFolder attributes:nil];
+        //[fileManager createDirectoryAtPath:applicationSupportFolder attributes:nil];
+        [fileManager createDirectoryAtURL:[NSURL URLWithString:applicationSupportFolder] withIntermediateDirectories:YES attributes:nil error:&error];
     }
 	
     url = [NSURL fileURLWithPath: [applicationSupportFolder stringByAppendingPathComponent: @"pathKeeperLibrary.sql"]];
@@ -126,7 +127,7 @@
     fileManager = [NSFileManager defaultManager];
     applicationSupportFolder = [self applicationSupportFolder];
     if ( ![fileManager fileExistsAtPath:applicationSupportFolder isDirectory:NULL] ) {
-        [fileManager createDirectoryAtPath:applicationSupportFolder attributes:nil];
+        [fileManager createDirectoryAtURL:[NSURL URLWithString:applicationSupportFolder] withIntermediateDirectories:YES attributes:nil error:&error];
     }
 	//	NSManagedObjectModel* model = [self tileManagedObjectModel];
 	
@@ -400,7 +401,7 @@
 	if([theMenuItem action] == @selector(print:))
 		return YES;
 	NSLog(@"%@", theMenuItem);
-	if ([theMenuItem title] == @"New GPS Reciever")
+	if ([[theMenuItem title] isEqual: @"New GPS Reciever"])
 		return YES;
 	
 	return NO;
@@ -461,12 +462,12 @@
 	{
 		//[detailViewController 
 		NSSavePanel *pdfSavingDialog = [NSSavePanel savePanel];
-		[pdfSavingDialog setRequiredFileType:@"pdf"];
+		[pdfSavingDialog setAllowedFileTypes:[NSArray arrayWithObject:@"pdf"]];
 		
-		if ( [pdfSavingDialog runModalForDirectory:nil file:nil] == NSOKButton )
+		if ( [pdfSavingDialog runModal] == NSOKButton )
 		{
 			NSData *dataForPDF = [[(PKGraphView*)[[detailViewController currentViewController] view] graph] dataForPDFRepresentationOfLayer];
-			[dataForPDF writeToFile:[pdfSavingDialog filename] atomically:NO];
+			[dataForPDF writeToURL:[pdfSavingDialog URL] atomically:NO];
 		}
 	}
 }

@@ -91,7 +91,7 @@
 {
 	NSLog(@"Mouse down event: %@", theEvent);
     BOOL keepOn = YES;
-    BOOL isInside = YES;
+//    BOOL isInside = YES;
     NSPoint mouseLoc;
 	
     while (keepOn) {
