@@ -31,6 +31,7 @@
 		9035A37D0E6805700078090E /* NSData_AMDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9035A37C0E6805700078090E /* NSData_AMDigest.m */; };
 		9038AC400F76A44900589315 /* MyDocument1.0.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9038AC3F0F76A44900589315 /* MyDocument1.0.xcmappingmodel */; };
 		903A82D60F420881008C5A77 /* BWToolkitFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 90D8D1590F0815B800CE3223 /* BWToolkitFramework.framework */; };
+		903B408D17D386B000BB6054 /* PROJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903B408C17D386B000BB6054 /* PROJ.framework */; };
 		903C025D0ED7150000426C86 /* importGPSFiles.xib in Resources */ = {isa = PBXBuildFile; fileRef = 903C025C0ED7150000426C86 /* importGPSFiles.xib */; };
 		903C02630ED7181F00426C86 /* PKImportGPSFilesSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C02620ED7181F00426C86 /* PKImportGPSFilesSheetController.m */; };
 		9045A19114F78B6E00F25BFA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9045A19014F78B6D00F25BFA /* libsqlite3.dylib */; };
@@ -63,7 +64,6 @@
 		9068834E0F8D401A00FA9282 /* ManualGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 902282E40F8BB717006E2091 /* ManualGroup.m */; };
 		9068834F0F8D401B00FA9282 /* SmartGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 902282E60F8BB717006E2091 /* SmartGroup.m */; };
 		906A6E0D10B8353900013053 /* PKDateToNumberTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 906A6E0B10B834DD00013053 /* PKDateToNumberTransformer.m */; };
-		906ABCD314F8064600F26E5B /* PROJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906ABCD214F8064600F26E5B /* PROJ.framework */; };
 		906ABD0514F8144500F26E5B /* libMapView-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 906ABD0314F813BD00F26E5B /* libMapView-osx.a */; };
 		907FF8E50E50A27000BE6D38 /* PSTileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8E40E50A27000BE6D38 /* PSTileMO.m */; };
 		907FF8F60E50A94400BE6D38 /* PSTileGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8F30E50A94400BE6D38 /* PSTileGroup.m */; };
@@ -263,6 +263,7 @@
 		903829B60E2392CA0085FCAC /* GPXImportOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXImportOperation.m; sourceTree = "<group>"; };
 		903829B70E2392CA0085FCAC /* ImportGPXIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImportGPXIcon.png; sourceTree = "<group>"; };
 		9038AC3F0F76A44900589315 /* MyDocument1.0.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument1.0.xcmappingmodel; sourceTree = "<group>"; };
+		903B408C17D386B000BB6054 /* PROJ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PROJ.framework; path = ../../../../../Library/Frameworks/PROJ.framework; sourceTree = "<group>"; };
 		903C025C0ED7150000426C86 /* importGPSFiles.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = importGPSFiles.xib; sourceTree = "<group>"; };
 		903C02610ED7181F00426C86 /* PKImportGPSFilesSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKImportGPSFilesSheetController.h; sourceTree = "<group>"; };
 		903C02620ED7181F00426C86 /* PKImportGPSFilesSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKImportGPSFilesSheetController.m; sourceTree = "<group>"; };
@@ -443,7 +444,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				906ABCD314F8064600F26E5B /* PROJ.framework in Frameworks */,
+				903B408D17D386B000BB6054 /* PROJ.framework in Frameworks */,
 				9045A19914F78BA100F25BFA /* CoreData.framework in Frameworks */,
 				9045A19714F78B8C00F25BFA /* libssl.dylib in Frameworks */,
 				9045A19514F78B8400F25BFA /* libcrypto.dylib in Frameworks */,
@@ -514,6 +515,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* PathKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				903B408C17D386B000BB6054 /* PROJ.framework */,
 				906ABCF714F813BC00F26E5B /* MapView-osx.xcodeproj */,
 				906ABCEA14F8106D00F26E5B /* CorePlot.xcodeproj */,
 				906ABCD214F8064600F26E5B /* PROJ.framework */,
@@ -1369,6 +1371,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					/Users/dirkjan/Projects/3rd_Party/BWToolkit,
 					"\"$(SRCROOT)/../CorePlot/framework/build/Debug\"",
+					/Library/Frameworks/,
 				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1405,6 +1408,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					/Users/dirkjan/Projects/3rd_Party/BWToolkit,
 					"\"$(SRCROOT)/../CorePlot/framework/build/Debug\"",
+					/Library/Frameworks/,
 				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
