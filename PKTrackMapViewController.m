@@ -31,15 +31,16 @@
 	if (!trackView)
 		return;
 	
-//	RMLayerSet* overlaySet = [[trackView contents] overlay];
-	
+	RMLayerCollection* overlaySet = [[trackView contents] overlay];
+//	RMLayerCollection = [[RMLayerCollection alloc] init];
+    
 	[paths release];
 	[trackView moveToLatLong:point];
 	paths = [[NSMutableArray alloc] init];
 	for (PKTrackMO* track in [self currentTracks])
 		[paths addObject:[track RMPathForContents:[trackView contents]]];
-//	[overlaySet setSublayers:paths];
-	
+	[overlaySet setSublayers:paths];
+
 	[trackView setNeedsDisplay:YES];
 };
 

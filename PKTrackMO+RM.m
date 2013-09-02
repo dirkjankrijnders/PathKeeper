@@ -35,7 +35,12 @@
 -(RMPath*) RMPathForContents:(RMMapContents*)contents
 {
 	RMPath* path = [[RMPath alloc] initWithContents:contents];
-	[path setLatLongPoints:[self RMProjectedPointsArrayForMapContents:contents]];
+    RMProjectedPoint mercator;
+    for (NSValue* point in [self RMProjectedPointsArrayForMapContents:contents]) {
+        [point getValue:&mercator];
+        [path addLineToXY:mercator];
+    }
+         //    [path setLatLongPoints:[self RMProjectedPointsArrayForMapContents:contents]];
 	return [path autorelease];
 }
 
