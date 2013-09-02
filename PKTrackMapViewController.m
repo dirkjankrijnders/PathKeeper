@@ -27,12 +27,11 @@
 	CLLocationCoordinate2D point;
 	point.latitude = [latitude floatValue];
 	point.longitude = [longitude floatValue];
-//	float zoom = 1.0;
+
 	if (!trackView)
 		return;
 	
 	RMLayerCollection* overlaySet = [[trackView contents] overlay];
-//	RMLayerCollection = [[RMLayerCollection alloc] init];
     
 	[paths release];
 	[trackView moveToLatLong:point];

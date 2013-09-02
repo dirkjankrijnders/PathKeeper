@@ -46,15 +46,15 @@
 			[plugin exportTrackAtIndex:index];
 			if ([plugin shouldWriteGPXDataForTrackMO:track data:gpxData toPath:@"" forTrackAtIndex:index])
 			{
-				[self setTitle:[NSString stringWithFormat:@"Exporting %d/%d: %@", index, [trackObjectIDs count], [track name]]];
+				[self setTitle:[NSString stringWithFormat:@"Exporting %ld/%ld: %@", (unsigned long)index, (unsigned long)[trackObjectIDs count], [track name]]];
 				[plugin didWriteGPXDataToPath:@"" forTrackAtIndex:index];
 			}
 			NSString* filename = [NSString stringWithFormat:@"%@/%@-%@.kml", tempPath, [track name], [track startDate]];
 			if ([plugin shouldWriteKMLDataForTrackMO:track data:kmlData toPath:filename forTrackAtIndex:index])
 			{
-				[self setTitle:[NSString stringWithFormat:@"Exporting %d/%d: %@ to %@", index, [trackObjectIDs count], [track name], filename]];
+				[self setTitle:[NSString stringWithFormat:@"Exporting %ld/%ld: %@ to %@", (unsigned long)index, (unsigned long)[trackObjectIDs count], [track name], filename]];
 //				NSLog(@"%@", [NSString stringWithFormat:@"Exporting %d/%d: %@ to %@", index, [trackObjectIDs count], [track name], filename]);
-				[track asKMLFileAtPath:tempPath templateKMLPath:@""];
+				[track asKMLFileAtPath:tempPath templateKMLPath:[NSURL URLWithString:@""]];
 				[plugin didWriteKMLDataToPath:filename forTrackAtIndex:index];
 				[[NSFileManager defaultManager] removeItemAtPath:filename error:&error];
 			}
