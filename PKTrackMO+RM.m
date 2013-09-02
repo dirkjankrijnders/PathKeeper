@@ -35,6 +35,7 @@
 -(RMPath*) RMPathForContents:(RMMapContents*)contents
 {
 	RMPath* path = [[RMPath alloc] initWithContents:contents];
+    [path setDrawingMode:kCGPathStroke];
     RMProjectedPoint mercator;
     for (NSValue* point in [self RMProjectedPointsArrayForMapContents:contents]) {
         [point getValue:&mercator];
