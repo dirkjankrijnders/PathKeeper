@@ -10,13 +10,15 @@
 #import "AEGPSRecieverMO.h"
 #import "PKTrackMO.h"
 
+#import "pathKeeper_AppDelegate.h"
+
 @implementation PKGPSSelectionViewController
 - (void) loadView
 {
 	[super loadView];
 	[self fixGPSRecieverDropDown];
 	[oGPSRecieversController addObserver:self forKeyPath:@"arrangedObjects" options:(NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew) context:NULL];
-	[[[NSApp delegate] trackController] addObserver:self forKeyPath:@"selection" options:NSKeyValueObservingOptionNew context:NULL];
+	[[(pathKeeper_AppDelegate*)[NSApp delegate] trackController] addObserver:self forKeyPath:@"selection" options:NSKeyValueObservingOptionNew context:NULL];
 	[oGPSRecieverSelector setAutoenablesItems:false];
 };
 

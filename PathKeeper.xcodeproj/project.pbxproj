@@ -64,7 +64,6 @@
 		907FF8F60E50A94400BE6D38 /* PSTileGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8F30E50A94400BE6D38 /* PSTileGroup.m */; };
 		907FF8F70E50A94400BE6D38 /* PSTileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8F50E50A94400BE6D38 /* PSTileManager.m */; };
 		907FF9E20E50C9D400BE6D38 /* PSTileManager.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8E80E50A2B000BE6D38 /* PSTileManager.xcdatamodel */; };
-		907FFA020E50D97500BE6D38 /* PKMapSourceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907FFA010E50D97500BE6D38 /* PKMapSourceController.m */; };
 		908A71C017D38F5D0074D67D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908A71BF17D38F5D0074D67D /* QuartzCore.framework */; };
 		908BA7180EB7A5520002CABD /* MyDocument0.6.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 908BA7170EB7A5520002CABD /* MyDocument0.6.xcmappingmodel */; };
 		90961FC00EA9E33800C4D896 /* PKKMLExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 90961FBF0EA9E33800C4D896 /* PKKMLExport.m */; };
@@ -107,7 +106,6 @@
 		90DF09B60E4602E00096E3CD /* trackMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DF09B50E4602E00096E3CD /* trackMapView.xib */; };
 		90DF0A3A0E460C750096E3CD /* GPSSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DF0A390E460C750096E3CD /* GPSSelectionView.xib */; };
 		90DF0A3F0E460C930096E3CD /* PKGPSSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DF0A3E0E460C930096E3CD /* PKGPSSelectionViewController.m */; };
-		90DF0ACD0E46D56B0096E3CD /* trackMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DF0ACC0E46D56B0096E3CD /* trackMapView.m */; };
 		90DF0C0E0E4786D90096E3CD /* AEConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DF0C0D0E4786D90096E3CD /* AEConverter.m */; };
 		90E2D2560FFF72400054FA2E /* MyDocument1.4.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 90E2D2550FFF72400054FA2E /* MyDocument1.4.xcdatamodel */; };
 		90E2D25B0FFF72870054FA2E /* MyDocument1.4.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 90E2D25A0FFF72870054FA2E /* MyDocument1.4.xcmappingmodel */; };
@@ -1161,7 +1159,6 @@
 				90DF097A0E45E0780096E3CD /* PKWaypointViewController.m in Sources */,
 				90DF09B20E46028D0096E3CD /* PKTrackMapViewController.m in Sources */,
 				90DF0A3F0E460C930096E3CD /* PKGPSSelectionViewController.m in Sources */,
-				90DF0ACD0E46D56B0096E3CD /* trackMapView.m in Sources */,
 				90DF0C0E0E4786D90096E3CD /* AEConverter.m in Sources */,
 				90F801AE0E48E9B000AB155E /* PKTrackOverviewViewController.m in Sources */,
 				90BD3F5F0E4C97400018846D /* PKSourceOutlineViewController.m in Sources */,
@@ -1169,7 +1166,6 @@
 				907FF8F60E50A94400BE6D38 /* PSTileGroup.m in Sources */,
 				907FF8F70E50A94400BE6D38 /* PSTileManager.m in Sources */,
 				907FF9E20E50C9D400BE6D38 /* PSTileManager.xcdatamodel in Sources */,
-				907FFA020E50D97500BE6D38 /* PKMapSourceController.m in Sources */,
 				9035A37D0E6805700078090E /* NSData_AMDigest.m in Sources */,
 				90FA7F680E74020F0048EE2A /* MyDocument0.2.xcmappingmodel in Sources */,
 				90FA7FD30E74FAB50048EE2A /* PKTrackCategory.m in Sources */,

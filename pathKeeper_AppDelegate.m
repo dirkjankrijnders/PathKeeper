@@ -11,7 +11,7 @@
 #import "PKKMLExport-perTrack.h"
 #import "PKMainWindowController.h"
 #import "PKMainViewController.h"
-#import "PKMapSourceController.h"
+//#import "PKMapSourceController.h"
 #import "PKPreferenceController.h"
 #import "PKImportGPSFilesSheetController.h"
 #import "PKExportPluginManager.h"
@@ -430,11 +430,11 @@
 
 - (void) setupMapSources
 {
-	PKMapSourceController* mapSource = [[[PKMapSourceController alloc] init] autorelease];
+/*	PKMapSourceController* mapSource = [[[PKMapSourceController alloc] init] autorelease];
 	[mapSource setPixelsPerTile:(NSUInteger)256];
 	[mapSource setDisplayName:@"Openstreetmaps"];
 	[mapSource tileForLL:NSMakePoint(52.0, 4.0) atZoomLevel:11];
-	[mMapSources addObject:mapSource];
+	[mMapSources addObject:mapSource];*/
 };
 
 - (NSMutableArray*) mapSources

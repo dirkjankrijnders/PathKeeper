@@ -27,4 +27,7 @@
 	return self;
 };
 
+- (void) handleError:(NSError *)err {
+    NSLog(@"%@", err);
+}
 @end

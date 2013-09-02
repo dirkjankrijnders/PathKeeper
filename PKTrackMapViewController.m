@@ -16,10 +16,14 @@
 #import "RMPath.h"
 //#import "RMLayerSet.h"
 
+#import "XSWindowController.h"
+
 @implementation PKTrackMapViewController
 
 - (void) setRepresentedObject:(id)rO
 {
+    [RMMapView class]; // Here to keep the linker at bay;
+
 	[super setRepresentedObject:rO];
 	NSArray* points = [[rO objectAtIndex:0] valueForKey:@"sortedPoints"];// objectAtIndex:0];
 	NSNumber* longitude = [(PKWaypointMO*)[points objectAtIndex:0] longitude];
@@ -95,7 +99,7 @@
     NSPoint mouseLoc;
 	
     while (keepOn) {
-        theEvent = [[[self windowController] window] nextEventMatchingMask: NSLeftMouseUpMask |
+        theEvent = [[(XSWindowController*)[self windowController] window] nextEventMatchingMask: NSLeftMouseUpMask |
 					NSLeftMouseDraggedMask];
         mouseLoc = [trackView convertPoint:[theEvent locationInWindow] fromView:nil];
 //        isInside = [self mouse:mouseLoc inRect:[self bounds]];

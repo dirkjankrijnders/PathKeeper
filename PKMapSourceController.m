@@ -7,7 +7,7 @@
 //
 
 #import "PKMapSourceController.h"
-
+#import "pathKeeper_AppDelegate.h"
 
 @implementation PKMapSourceController
 
@@ -45,7 +45,7 @@
 	[self setTileManagerName:@"OSM"];
 	if (tileManager == nil)
 	{
-		NSManagedObjectContext* tileMOC = [[NSApp delegate] tileManagedObjectContext];
+		NSManagedObjectContext* tileMOC = [(pathKeeper_AppDelegate*)[NSApp delegate] tileManagedObjectContext];
 		NSPredicate* namePredicate = [NSPredicate predicateWithFormat:@"name like %@", [self tileManagerName]];
 		NSLog(@"Predicate: %@", namePredicate);
 		NSFetchRequest* request = [[NSFetchRequest alloc] init];

@@ -9,6 +9,7 @@
 #import "GPXImportOperation.h"
 #import "PKTrackMO.h"
 #import "SmartGroup.h"
+#import "pathKeeper_AppDelegate.h"
 
 /*@interface GPXImportOperation ()
 @property (readwrite, copy) NSURL* url;
@@ -96,7 +97,7 @@ NSString * const kPKDuplicateCategoryName = @"Duplicate tracks";
 	thisImportCategory = [[PKTrackCategory alloc] initWithEntity:entity insertIntoManagedObjectContext:tempMOContext];
 	[thisImportCategory setName:[NSString stringWithFormat:@"ImportGroup %@", [NSDate date]]];
 	[thisImportCategory setHide:[NSNumber numberWithInt:0]];
-	[tempMOContext assignObject:thisImportCategory toPersistentStore:[[NSApp delegate] primaryStore]];
+	[tempMOContext assignObject:thisImportCategory toPersistentStore:[(pathKeeper_AppDelegate*)[NSApp delegate] primaryStore]];
 	
 	entity = [NSEntityDescription entityForName:@"SmartGroup"
 						 inManagedObjectContext:tempMOContext];
@@ -104,7 +105,7 @@ NSString * const kPKDuplicateCategoryName = @"Duplicate tracks";
 	[importSmartGroup setName:[NSString stringWithFormat:@"Import %@", [NSDate date]]];
 	NSPredicate* importGroupPredicate = [NSPredicate predicateWithFormat:@"categories.name contains %@", [thisImportCategory name]];
 	[importSmartGroup setPredicate:importGroupPredicate];
-	[tempMOContext assignObject:importSmartGroup toPersistentStore:[[NSApp delegate] primaryStore]];
+	[tempMOContext assignObject:importSmartGroup toPersistentStore:[(pathKeeper_AppDelegate*)[NSApp delegate] primaryStore]];
 	
 	success = [gpxParser parse]; // return value not used
 //	NSError* error;
@@ -226,7 +227,7 @@ NSString * const kPKDuplicateCategoryName = @"Duplicate tracks";
 //		[MOContext refreshObject:currentTrack mergeChanges:YES];
 //		NSError* error = nil;
 		[currentTrack setStopDate:currentDate];
-		NSLog(@"Inserted objects: %i", [[tempMOContext insertedObjects] count]);
+		NSLog(@"Inserted objects: %li", (unsigned long)[[tempMOContext insertedObjects] count]);
 //		NSLog(@"Pre - saving");
 		
 		[pool drain];

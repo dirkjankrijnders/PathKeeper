@@ -198,7 +198,7 @@
 	};
 	[predicateEditor setObjectValue:[[sender representedObject] predicate]];
 	[NSApp beginSheet:predicateEditorSheet 
-	   modalForWindow:[[self windowController] window]
+	   modalForWindow:[(XSWindowController*)[self windowController] window]
 		modalDelegate:self
 	   didEndSelector:@selector(doneEditingPredicate:returnCode:contextInfo:)
 		  contextInfo:NULL];
