@@ -60,7 +60,6 @@
 		9068834F0F8D401B00FA9282 /* SmartGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 902282E60F8BB717006E2091 /* SmartGroup.m */; };
 		906A6E0D10B8353900013053 /* PKDateToNumberTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 906A6E0B10B834DD00013053 /* PKDateToNumberTransformer.m */; };
 		906ABD0514F8144500F26E5B /* libMapView-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 906ABD0314F813BD00F26E5B /* libMapView-osx.a */; };
-		907FF8E50E50A27000BE6D38 /* PSTileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8E40E50A27000BE6D38 /* PSTileMO.m */; };
 		907FF8F60E50A94400BE6D38 /* PSTileGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8F30E50A94400BE6D38 /* PSTileGroup.m */; };
 		907FF8F70E50A94400BE6D38 /* PSTileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8F50E50A94400BE6D38 /* PSTileManager.m */; };
 		907FF9E20E50C9D400BE6D38 /* PSTileManager.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8E80E50A2B000BE6D38 /* PSTileManager.xcdatamodel */; };
@@ -1162,7 +1161,6 @@
 				90DF0C0E0E4786D90096E3CD /* AEConverter.m in Sources */,
 				90F801AE0E48E9B000AB155E /* PKTrackOverviewViewController.m in Sources */,
 				90BD3F5F0E4C97400018846D /* PKSourceOutlineViewController.m in Sources */,
-				907FF8E50E50A27000BE6D38 /* PSTileMO.m in Sources */,
 				907FF8F60E50A94400BE6D38 /* PSTileGroup.m in Sources */,
 				907FF8F70E50A94400BE6D38 /* PSTileManager.m in Sources */,
 				907FF9E20E50C9D400BE6D38 /* PSTileManager.xcdatamodel in Sources */,

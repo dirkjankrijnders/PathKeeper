@@ -8,6 +8,7 @@
 
 #import "PSTileManager.h"
 #import "PSTileGroup.h"
+#import "pathKeeper_AppDelegate.h"
 
 @implementation PSTileManager 
 
@@ -20,7 +21,7 @@
 - (NSManagedObjectContext*) tileMOC
 {
 	if (tileMOC == nil)
-		tileMOC = [[NSApp delegate] tileManagedObjectContext];
+		tileMOC = [(pathKeeper_AppDelegate*)[NSApp delegate] tileManagedObjectContext];
 	
 	return tileMOC;
 };

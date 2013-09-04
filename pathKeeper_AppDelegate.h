@@ -54,10 +54,10 @@
 - (NSManagedObjectModel *)managedObjectModel;
 - (NSManagedObjectContext *)managedObjectContext;
 
-- (NSPersistentStoreCoordinator *)tilePersistentStoreCoordinator;
+/*- (NSPersistentStoreCoordinator *)tilePersistentStoreCoordinator;
 - (NSManagedObjectModel *)tileManagedObjectModel;
 - (NSManagedObjectContext *) tileManagedObjectContext;
-
+*/
 - (NSArrayController*) trackController;
 - (NSArrayController*) mapSourceController;
 - (NSOperationQueue*) opController;

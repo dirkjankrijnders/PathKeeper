@@ -8,6 +8,7 @@
 
 #import "PKToolbarDelegate.h"
 
+#import "pathKeeper_AppDelegate.h"
 
 @implementation PKToolbarDelegate
 
@@ -15,12 +16,12 @@
 
 - (IBAction) importGPX:(id)sender
 {
-	[[NSApp delegate] openGPXFile:sender];
+	[(pathKeeper_AppDelegate*)[NSApp delegate] openGPXFile:sender];
 };
 
 - (IBAction) exportMyPlaces:(id)sender
 {
-	[[NSApp delegate] exportToMyPlaces:sender];
+	[(pathKeeper_AppDelegate*)[NSApp delegate] exportToMyPlaces:sender];
 };
 
 - (void)setSearchFieldContent:(NSString*)sender

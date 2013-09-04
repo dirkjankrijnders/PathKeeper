@@ -134,6 +134,6 @@ Copyright © 2005 Apple Computer, Inc., All Rights Reserved
 
 - (NSNumber*) count
 {
-	return [NSNumber numberWithInt:[[self primitiveValueForKey: @"tracks"] count]];
+	return [NSNumber numberWithInt:[(NSSet*)[self primitiveValueForKey: @"tracks"] count]];
 }
 @end
