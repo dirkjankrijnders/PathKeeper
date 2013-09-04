@@ -11,10 +11,11 @@
 
 @class RMMapContents;
 @class RMPath;
+@class PKStyleMO;
 
 @interface PKTrackMO(RouteMe) 
 
 - (NSArray*) RMProjectedPointsArrayForMapContents:(RMMapContents*)contents;
-- (RMPath*) RMPathForContents:(RMMapContents*)contents;
+- (RMPath*) RMPathForContents:(RMMapContents*)contents style:(PKStyleMO*)style;
 
 @end

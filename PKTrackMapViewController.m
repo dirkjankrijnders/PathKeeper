@@ -10,6 +10,8 @@
 #import "PKTrackMO.h"
 #import "PKTrackMO+RM.h"
 #import "PKWaypointMO.h"
+#import "PKStyleMO.h"
+#import "PKTrackCategory.h"
 
 #import "RMLatLong.h"
 #import "RMMapView.h"
@@ -41,7 +43,10 @@
 	[trackView moveToLatLong:point];
 	paths = [[NSMutableArray alloc] init];
 	for (PKTrackMO* track in [self currentTracks])
-		[paths addObject:[track RMPathForContents:[trackView contents]]];
+        for (PKTrackCategory* cat in [track categories]){
+            if ([cat style] != nil)
+                [paths addObject:[track RMPathForContents:[trackView contents] style:[cat style]]];
+        }
 	[overlaySet setSublayers:paths];
 
 	[trackView setNeedsDisplay:YES];

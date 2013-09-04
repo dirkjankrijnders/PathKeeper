@@ -8,6 +8,7 @@
 
 #import "PKTrackMO+RM.h"
 #import "PKWaypointMO.h"
+#import "PKStyleMO.h"
 
 #import "RMFoundation.h"
 #import "RMLatLong.h"
@@ -32,9 +33,12 @@
 	return [array autorelease];
 };
 
--(RMPath*) RMPathForContents:(RMMapContents*)contents
+-(RMPath*) RMPathForContents:(RMMapContents*)contents style:(PKStyleMO*)style
 {
 	RMPath* path = [[RMPath alloc] initWithContents:contents];
+    [path setLineColor:[style colour]];
+    [path setLineWidth:[[style linewidth] floatValue]];
+//    [path setOpacity:[style opacity]];
     [path setDrawingMode:kCGPathStroke];
     RMProjectedPoint mercator;
     for (NSValue* point in [self RMProjectedPointsArrayForMapContents:contents]) {
