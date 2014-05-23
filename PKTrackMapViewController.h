@@ -15,7 +15,10 @@
 @interface PKTrackMapViewController : XSViewController {
 	IBOutlet RMMapView* trackView;
 	NSMutableArray* paths;
+    
 }
+
+- (void) setRepresentedObject:(id)rO;
 
 - (NSSet*) currentTracks;
 - (IBAction) zoomOut:(id)sender;

@@ -61,7 +61,6 @@
 		906A6E0D10B8353900013053 /* PKDateToNumberTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 906A6E0B10B834DD00013053 /* PKDateToNumberTransformer.m */; };
 		906ABD0514F8144500F26E5B /* libMapView-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 906ABD0314F813BD00F26E5B /* libMapView-osx.a */; };
 		907FF8F60E50A94400BE6D38 /* PSTileGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8F30E50A94400BE6D38 /* PSTileGroup.m */; };
-		907FF8F70E50A94400BE6D38 /* PSTileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8F50E50A94400BE6D38 /* PSTileManager.m */; };
 		907FF9E20E50C9D400BE6D38 /* PSTileManager.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 907FF8E80E50A2B000BE6D38 /* PSTileManager.xcdatamodel */; };
 		908A71C017D38F5D0074D67D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908A71BF17D38F5D0074D67D /* QuartzCore.framework */; };
 		908BA7180EB7A5520002CABD /* MyDocument0.6.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 908BA7170EB7A5520002CABD /* MyDocument0.6.xcmappingmodel */; };
@@ -133,20 +132,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 90FB4B2310A6C520003BF7F6;
 			remoteInfo = PKPlugins;
-		};
-		906ABCF014F8106D00F26E5B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 906ABCEA14F8106D00F26E5B /* CorePlot.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = CorePlot;
-		};
-		906ABCF214F8106D00F26E5B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 906ABCEA14F8106D00F26E5B /* CorePlot.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0730F600109492D800E95162;
-			remoteInfo = UnitTests;
 		};
 		906ABD0214F813BD00F26E5B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -294,7 +279,6 @@
 		906883210F8D346A00FA9282 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 		906A6E0A10B834DD00013053 /* PKDateToNumberTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDateToNumberTransformer.h; sourceTree = "<group>"; };
 		906A6E0B10B834DD00013053 /* PKDateToNumberTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKDateToNumberTransformer.m; sourceTree = "<group>"; };
-		906ABCEA14F8106D00F26E5B /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = ../../3rd_Party/CorePlot_1.0/Source/framework/CorePlot.xcodeproj; sourceTree = "<group>"; };
 		906ABCF714F813BC00F26E5B /* MapView-osx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "MapView-osx.xcodeproj"; path = "../../3rd_Party/route-me/MapView/MapView-osx.xcodeproj"; sourceTree = "<group>"; };
 		90753E800E237DA100C68B2F /* AEGPSRecieverMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEGPSRecieverMO.h; sourceTree = "<group>"; };
 		90753E810E237DA100C68B2F /* AEGPSRecieverMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEGPSRecieverMO.m; sourceTree = "<group>"; };
@@ -494,7 +478,6 @@
 			isa = PBXGroup;
 			children = (
 				9034F38F17D3CF0C00339D1F /* libsqlite3.dylib */,
-				906ABCEA14F8106D00F26E5B /* CorePlot.xcodeproj */,
 				906ABCF714F813BC00F26E5B /* MapView-osx.xcodeproj */,
 				90FB49DA10A6012F003BF7F6 /* Plugin Framework */,
 				90E2D25A0FFF72870054FA2E /* MyDocument1.4.xcmappingmodel */,
@@ -720,15 +703,6 @@
 			children = (
 			);
 			name = PredicateTemplates;
-			sourceTree = "<group>";
-		};
-		906ABCEB14F8106D00F26E5B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				906ABCF114F8106D00F26E5B /* CorePlot.framework */,
-				906ABCF314F8106D00F26E5B /* UnitTests.octest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		906ABCF814F813BC00F26E5B /* Products */ = {
@@ -1023,7 +997,7 @@
 		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 26FC0AA90875C8B900E6366F /* Build configuration list for PBXProject "PathKeeper" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1035,10 +1009,6 @@
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* PathKeeper */;
 			projectDirPath = "";
 			projectReferences = (
-				{
-					ProductGroup = 906ABCEB14F8106D00F26E5B /* Products */;
-					ProjectRef = 906ABCEA14F8106D00F26E5B /* CorePlot.xcodeproj */;
-				},
 				{
 					ProductGroup = 906ABCF814F813BC00F26E5B /* Products */;
 					ProjectRef = 906ABCF714F813BC00F26E5B /* MapView-osx.xcodeproj */;
@@ -1055,20 +1025,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		906ABCF114F8106D00F26E5B /* CorePlot.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CorePlot.framework;
-			remoteRef = 906ABCF014F8106D00F26E5B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		906ABCF314F8106D00F26E5B /* UnitTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = UnitTests.octest;
-			remoteRef = 906ABCF214F8106D00F26E5B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		906ABD0314F813BD00F26E5B /* libMapView-osx.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1162,7 +1118,6 @@
 				90F801AE0E48E9B000AB155E /* PKTrackOverviewViewController.m in Sources */,
 				90BD3F5F0E4C97400018846D /* PKSourceOutlineViewController.m in Sources */,
 				907FF8F60E50A94400BE6D38 /* PSTileGroup.m in Sources */,
-				907FF8F70E50A94400BE6D38 /* PSTileManager.m in Sources */,
 				907FF9E20E50C9D400BE6D38 /* PSTileManager.xcdatamodel in Sources */,
 				9035A37D0E6805700078090E /* NSData_AMDigest.m in Sources */,
 				90FA7F680E74020F0048EE2A /* MyDocument0.2.xcmappingmodel in Sources */,
@@ -1306,29 +1261,17 @@
 		26FC0AAA0875C8B900E6366F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../CorePlot/framework/build/Debug\"";
-				GCC_VERSION = 4.0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				OTHER_CFLAGS = "-Winvalid-pch";
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
 			name = Debug;
 		};
 		26FC0AAB0875C8B900E6366F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				ENABLE_OPENMP_SUPPORT = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../core-plot-clean3/framework/build/Debug\"";
-				GCC_VERSION = 4.0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				OTHER_CFLAGS = "-Winvalid-pch";
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
 			name = Release;
 		};
@@ -1336,7 +1279,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1372,7 +1314,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1408,7 +1349,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(NATIVE_ARCH)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1509,7 +1449,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;

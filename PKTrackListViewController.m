@@ -7,7 +7,7 @@
 //
 
 #import "PKTrackListViewController.h"
-
+#import "PathKeeper_AppDelegate.h"
 
 @implementation PKTrackListViewController
 
@@ -23,7 +23,7 @@
 	[nc addObserver:self selector:@selector(searchFieldChanged:) name:@"searchFieldContentsChanged" object:nil];
 	
 	[self setFilterPredicate:nil];
-	[[NSApp delegate] setTrackListController:trackListArrayController];
+	[(pathKeeper_AppDelegate*)[NSApp delegate] setTrackListController:trackListArrayController];
 };
 
 - (void) tableViewSelectionDidChange:(NSNotification *)notification
@@ -40,7 +40,7 @@
 
 - (void)searchFieldChanged:(NSNotification*)notification
 {
-	if ([[[notification userInfo] valueForKey:@"value"] compare:@""] == NSOrderedSame)
+	if ([[[notification userInfo] valueForKey:@"value"] compare:0] == NSOrderedSame)
 		[self setFilterPredicate:nil];
 	else
 		[self setFilterPredicate:[NSPredicate predicateWithFormat:@"name contains[cd] %@", [[notification userInfo] valueForKey:@"value"]]];

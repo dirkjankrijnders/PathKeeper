@@ -101,12 +101,12 @@
 	NSLog(@"Mouse down event: %@", theEvent);
     BOOL keepOn = YES;
 //    BOOL isInside = YES;
-    NSPoint mouseLoc;
+//    NSPoint mouseLoc;
 	
     while (keepOn) {
         theEvent = [[(XSWindowController*)[self windowController] window] nextEventMatchingMask: NSLeftMouseUpMask |
 					NSLeftMouseDraggedMask];
-        mouseLoc = [trackView convertPoint:[theEvent locationInWindow] fromView:nil];
+//        mouseLoc = [trackView convertPoint:[theEvent locationInWindow] fromView:nil];
 //        isInside = [self mouse:mouseLoc inRect:[self bounds]];
 		NSLog(@"Mouse dragged event: %@", theEvent);
 		

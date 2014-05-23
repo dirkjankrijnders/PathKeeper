@@ -20,7 +20,7 @@
 
 - (id)initWithNibName:(NSString *)name bundle:(NSBundle *)bundle windowController:(XSWindowController *)windowController;
 {
-	if (![super initWithNibName:name bundle:bundle windowController:windowController])
+	if (!(self = [super initWithNibName:name bundle:bundle windowController:windowController]))
 		return nil;
 	PKWaypointViewController* waypointViewController = [[[PKWaypointViewController alloc] initWithNibName:@"waypointView" bundle:nil windowController:windowController] autorelease];
 	[self addChild:waypointViewController];

@@ -22,7 +22,7 @@
 	if(convertedColor)
 	{
 		// Get the red, green, and blue components of the color
-		[convertedColor getRed:&redFloatValue green:&greenFloatValue blue:&blueFloatValue alpha:&alphaFloatValue];
+		[convertedColor getRed:(CGFloat*)&redFloatValue green:(CGFloat*)&greenFloatValue blue:(CGFloat*)&blueFloatValue alpha:(CGFloat*)&alphaFloatValue];
 		
 		// Convert the components to numbers (unsigned decimal integer) between 0 and 255
 		redIntValue=redFloatValue*255.99999f;

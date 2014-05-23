@@ -17,7 +17,7 @@
 - (IBAction) deleteWaypoints:(id)sender
 {
 	PKWaypointMO* item;
-	unsigned current_index = [[self selectedRowIndexes] firstIndex];
+	NSUInteger current_index = [[self selectedRowIndexes] firstIndex];
     while (current_index != NSNotFound)
     {
         item = [self itemAtRow:current_index];

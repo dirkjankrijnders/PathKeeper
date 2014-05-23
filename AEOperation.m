@@ -22,6 +22,8 @@
 		self.title = [url absoluteString];
 		NSLog(@"%@", self.MOContext);
 	//	NSLog(@"%@", [self.MOContext managedObjectModel]);
+	} else {
+		return nil;
 	}
 	NSLog(@"AEImporter created with %@", url);
 	return self;

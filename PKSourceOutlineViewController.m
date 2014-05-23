@@ -27,7 +27,8 @@
 
 - (id)initWithNibName:(NSString *)name bundle:(NSBundle *)bundle windowController:(XSWindowController *)windowController
 {
-	if (![super initWithNibName:name bundle:bundle windowController:windowController])
+	self = [super initWithNibName:name bundle:bundle windowController:windowController];
+	if (!self)
 	{
 		return nil;
 	}

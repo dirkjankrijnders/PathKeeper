@@ -59,7 +59,7 @@ NSString * const kPKDuplicateCategoryName = @"Duplicate tracks";
 	//	NSManagedObjectContextDidSaveNotification
 	
     gpxParser = [[NSXMLParser alloc] initWithContentsOfURL:url];	
-    [gpxParser setDelegate:self];	
+    [gpxParser setDelegate:self];
     [gpxParser setShouldResolveExternalEntities:YES];
 	currentStringValue = nil;
 	

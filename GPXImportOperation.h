@@ -14,7 +14,7 @@
 
 extern NSString* const kPKDuplicateCategoryName;
 
-@interface GPXImportOperation : AEOperation {
+@interface GPXImportOperation : AEOperation <NSXMLParserDelegate> {
 	PKTrackMO* currentTrack;
 	PKWaypointMO* currentTrackWaypoint;
 	PKWaypointMO* currentWaypoint;

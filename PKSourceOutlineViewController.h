@@ -26,7 +26,7 @@
 	
 	IBOutlet NSTreeController* libraryController;
 	
-	IBOutlet BOOL canRemoveGroup;
+//	IBOutlet BOOL canRemoveGroup;
 
 	NSPredicate* filterPredicate;
 }
