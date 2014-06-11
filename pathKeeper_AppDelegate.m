@@ -338,7 +338,8 @@
 	PKExportPluginManager* pluginManager = [PKExportPluginManager shared];
 	NSMenu* exportMenu = [exportMenuItem submenu];
 	for (id<PKExportPluginProtocol> plugin in [pluginManager loadedPlugins])		
-		[exportMenu addItemWithTitle:[plugin name] action:@selector(export:) keyEquivalent:@""]; 
+		[exportMenu addItemWithTitle:[plugin name] action:@selector(export:) keyEquivalent:@""];
+	opController = nil; 
 };
 
 
