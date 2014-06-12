@@ -52,7 +52,7 @@
 
 - (BOOL)shouldWriteGPXDataForTrackMO:(PKTrackMO*)track data:(NSData*)gpxData toPath:(NSString *)path forTrackAtIndex:(NSUInteger)index
 {
-	NSLog(@"Exporting GPX track #: %d: %@", index, track);
+	NSLog(@"Exporting GPX track #: %lu: %@", (unsigned long)index, track);
 	return NO;
 }
 
@@ -63,7 +63,7 @@
 
 - (BOOL)shouldWriteKMLDataForTrackMO:(PKTrackMO*)track data:(NSData*)kmlData toPath:(NSString *)path forTrackAtIndex:(NSUInteger)index
 {
-	NSLog(@"Exporting KML track #: %d: %@, returning NO!", index, track);
+	NSLog(@"Exporting KML track #: %lu: %@, returning NO!", (unsigned long)index, track);
 	return NO;
 }
 
