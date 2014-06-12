@@ -79,6 +79,8 @@
 		909F71EB0EAE47E500F62730 /* TrackListPredicateEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909F71EA0EAE47E500F62730 /* TrackListPredicateEditor.xib */; };
 		90A2CBB90EA2565800E5A3F6 /* PKTrackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A2CBB80EA2565800E5A3F6 /* PKTrackListViewController.m */; };
 		90A2CBBD0EA256B200E5A3F6 /* trackListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90A2CBBC0EA256B200E5A3F6 /* trackListView.xib */; };
+		90A6FDC11948A67F00F348C3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A6FDBE1948A54D00F348C3 /* CoreData.framework */; };
+		90A6FDC21948A6AB00F348C3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A6FDBE1948A54D00F348C3 /* CoreData.framework */; };
 		90A9D06D0EBDC68400A635F8 /* MyDocument0.8.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 90A9D06C0EBDC68300A635F8 /* MyDocument0.8.xcmappingmodel */; };
 		90B2EC8E10CBCCAA00C18A2A /* PKGraphInteractionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B2EC8B10CBCC2900C18A2A /* PKGraphInteractionLayer.m */; };
 		90B2ED1510CCE56B00C18A2A /* pointInteractionWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90B2ED1410CCE56B00C18A2A /* pointInteractionWindow.xib */; };
@@ -325,6 +327,7 @@
 		90A2CBB70EA2565800E5A3F6 /* PKTrackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTrackListViewController.h; sourceTree = "<group>"; };
 		90A2CBB80EA2565800E5A3F6 /* PKTrackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTrackListViewController.m; sourceTree = "<group>"; };
 		90A2CBBC0EA256B200E5A3F6 /* trackListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = trackListView.xib; sourceTree = "<group>"; };
+		90A6FDBE1948A54D00F348C3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		90A9D0690EBDC4FC00A635F8 /* MyDocument0.8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument0.8.xcdatamodel; sourceTree = "<group>"; };
 		90A9D06C0EBDC68300A635F8 /* MyDocument0.8.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = MyDocument0.8.xcmappingmodel; sourceTree = "<group>"; };
 		90B2EC8A10CBCC2900C18A2A /* PKGraphInteractionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKGraphInteractionLayer.h; sourceTree = "<group>"; };
@@ -425,6 +428,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90A6FDC21948A6AB00F348C3 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +436,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90A6FDC11948A67F00F348C3 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +576,7 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90A6FDBE1948A54D00F348C3 /* CoreData.framework */,
 				908A71BF17D38F5D0074D67D /* QuartzCore.framework */,
 				903B408C17D386B000BB6054 /* PROJ.framework */,
 				904CC8F00FDAC5B40007D537 /* CorePlot.framework */,
@@ -1261,6 +1267,7 @@
 		26FC0AAA0875C8B900E6366F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
@@ -1269,6 +1276,7 @@
 		26FC0AAB0875C8B900E6366F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				ENABLE_OPENMP_SUPPORT = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
